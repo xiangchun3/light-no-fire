@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model WikiArticle {
+  id         Int      @id @default(autoincrement())
+  slug       String   @unique
+  title      String
+  content    String
+  category   String
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  @@map("wiki_articles")
+}
+
+model Resource {
+  id          Int    @id @default(autoincrement())
+  name        String
+  slug        String @unique
+  rarity      String
+  biome       String
+  description String
+  uses        String[]
+  coordinates Json?
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@map("resources")
+}
+
+model MapMarker {
+  id          Int     @id @default(autoincrement())
+  type        String
+  title       String
+  latitude    Float
+  longitude   Float
+  description String?
+  createdAt   DateTime @default(now()) @map("created_at")
+
+  @@map("map_markers")
+}
