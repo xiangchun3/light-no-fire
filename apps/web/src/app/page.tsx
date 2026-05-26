@@ -4,6 +4,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Flame, Map, BookOpen, Wrench, ArrowRight } from "lucide-react";
+import { blogPosts } from "@/lib/blog-data";
+import { wikiArticles } from "@/lib/wiki-data";
 
 const features = [
   {
@@ -26,18 +28,11 @@ const features = [
   },
 ];
 
-const latestPosts = [
-  { title: "Everything We Know About Light No Fire", slug: "everything-we-know", date: "2025-05-20", category: "News" },
-  { title: "Light No Fire vs No Man's Sky", slug: "light-no-fire-vs-no-mans-sky", date: "2025-05-18", category: "Comparison" },
-  { title: "How Big Is Light No Fire Map?", slug: "light-no-fire-map-size", date: "2025-05-15", category: "Guide" },
-];
+const latestPosts = blogPosts.slice(0, 3);
 
-const popularWiki = [
-  { title: "Dragons", slug: "dragons", excerpt: "Learn about dragon taming and abilities." },
-  { title: "Biomes", slug: "biomes", excerpt: "Explore all biomes and their resources." },
-  { title: "Crafting", slug: "crafting", excerpt: "Complete crafting recipes and materials." },
-  { title: "Building", slug: "building", excerpt: "Base building mechanics and tips." },
-];
+const popularWiki = wikiArticles
+  .filter((a) => ["light-no-fire-gameplay", "light-no-fire-world", "light-no-fire-crafting", "dragons"].includes(a.slug))
+  .map((a) => ({ title: a.title, slug: a.slug, excerpt: a.excerpt }));
 
 export default function HomePage() {
   return (

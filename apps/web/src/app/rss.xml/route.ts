@@ -1,16 +1,9 @@
 import { gameItems, creatures, resources } from "@/lib/data";
+import { blogPosts } from "@/lib/blog-data";
 
 export const dynamic = "force-static";
 
 const baseUrl = "https://lightnofirewiki.com";
-
-const blogPosts = [
-  { slug: "everything-we-know", title: "Everything We Know About Light No Fire", date: "2025-05-20" },
-  { slug: "light-no-fire-vs-no-mans-sky", title: "Light No Fire vs No Man's Sky", date: "2025-05-18" },
-  { slug: "light-no-fire-map-size", title: "How Big Is Light No Fire Map?", date: "2025-05-15" },
-  { slug: "light-no-fire-release-date", title: "Light No Fire Release Date & Speculation", date: "2025-05-10" },
-  { slug: "top-5-dragons", title: "Top 5 Dragons We Want to See", date: "2025-05-05" },
-];
 
 export async function GET() {
   const itemsXml = gameItems
@@ -57,6 +50,7 @@ export async function GET() {
       <link>${baseUrl}/blog/${post.slug}</link>
       <guid>${baseUrl}/blog/${post.slug}</guid>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
+      <description>${escapeXml(post.excerpt)}</description>
     </item>`
     )
     .join("");

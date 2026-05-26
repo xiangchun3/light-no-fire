@@ -1,5 +1,9 @@
 import { MetadataRoute } from "next";
 import { gameItems, creatures, resources } from "@/lib/data";
+import { getWikiSlugs } from "@/lib/wiki-data";
+import { getBlogSlugs } from "@/lib/blog-data";
+import { getFAQSlugs } from "@/lib/faq-data";
+import { getCategorySlugs } from "@/lib/category-data";
 
 export const dynamic = "force-static";
 
@@ -10,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/wiki",
     "/blog",
+    "/faq",
+    "/category",
     "/map",
     "/tools",
     "/items",
@@ -23,20 +29,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === "/" ? 1.0 : 0.8,
   }));
 
-  const wikiSlugs = ["dragons", "biomes", "crafting", "mounts", "boats", "multiplayer", "races", "resources", "creatures", "building", "skills", "combat"];
-  const wikiRoutes = wikiSlugs.map((slug) => ({
+  const wikiRoutes = getWikiSlugs().map((slug) => ({
     url: `${baseUrl}/wiki/${slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
 
-  const blogSlugs = ["everything-we-know", "light-no-fire-vs-no-mans-sky", "light-no-fire-map-size", "light-no-fire-release-date", "top-5-dragons"];
-  const blogRoutes = blogSlugs.map((slug) => ({
+  const blogRoutes = getBlogSlugs().map((slug) => ({
     url: `${baseUrl}/blog/${slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.6,
+  }));
+
+  const faqRoutes = getFAQSlugs().map((slug) => ({
+    url: `${baseUrl}/faq/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  const categoryRoutes = getCategorySlugs().map((slug) => ({
+    url: `${baseUrl}/category/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.75,
   }));
 
   const itemRoutes = gameItems.map((item) => ({
@@ -64,6 +82,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticRoutes,
     ...wikiRoutes,
     ...blogRoutes,
+    ...faqRoutes,
+    ...categoryRoutes,
     ...itemRoutes,
     ...creatureRoutes,
     ...resourceRoutes,
