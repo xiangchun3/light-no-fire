@@ -8,8 +8,14 @@ export function generateStaticParams() {
   return resources.map((r) => ({ slug: r.slug }));
 }
 
-export function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  return { title: "Resource" };
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const resource = resources.find((r) => r.slug === slug);
+  return {
+    title: resource ? resource.name : "Resource",
+    description: resource ? resource.description : "Browse Light No Fire resources.",
+    alternates: { canonical: `/resources/${slug}/` },
+  };
 }
 
 export default async function ResourceDetailPage({ params }: { params: Promise<{ slug: string }> }) {

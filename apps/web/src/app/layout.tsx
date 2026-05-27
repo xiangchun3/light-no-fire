@@ -13,12 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lightnofirewiki.com"),
   title: {
     default: "Light No Fire Wiki & Map - Guides, Tools & Database",
     template: "%s - Light No Fire Wiki",
   },
-  description:
-    "The ultimate Light No Fire wiki, interactive map, and tool hub. Find items, resources, creatures, biomes, crafting guides, and more.",
+    description:
+    "Light No Fire wiki, interactive map, and tools. Find items, resources, creatures, biomes, crafting guides, and more.",
   keywords: [
     "Light No Fire",
     "Light No Fire Wiki",
@@ -28,13 +29,29 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Light No Fire Wiki & Map",
-    description: "Your ultimate destination for Light No Fire guides, map, and tools.",
+    description: "Light No Fire guides, map, and tools.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Light No Fire Wiki & Map",
-    description: "Your ultimate destination for Light No Fire guides, map, and tools.",
+    description: "Light No Fire guides, map, and tools.",
+  },
+  alternates: {
+    canonical: "/",
+  },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Light No Fire Wiki & Map",
+  url: "https://lightnofirewiki.com",
+  description: "Light No Fire wiki, interactive map, and tools.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://lightnofirewiki.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string",
   },
 };
 
@@ -48,8 +65,29 @@ export default function RootLayout({
       lang="en"
       suppressHydrationWarning
       data-scroll-behavior="smooth"
-      className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var theme = localStorage.getItem('theme');
+                  if (!theme) {
+                    theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                  }
+                  document.documentElement.classList.add(theme);
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
       </body>

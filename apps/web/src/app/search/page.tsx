@@ -6,6 +6,7 @@ import { SearchResults } from "@/components/search-results";
 export const metadata = {
   title: "Search",
   description: "Search the Light No Fire database for items, creatures, and resources.",
+  robots: { index: false, follow: false },
 };
 
 export default function SearchPage() {

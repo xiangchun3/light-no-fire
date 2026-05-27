@@ -8,6 +8,7 @@ import { Layers } from "lucide-react";
 export const metadata = {
   title: "Categories",
   description: "Browse Light No Fire content by category: biomes, creatures, dragons, building, exploration, and more.",
+  alternates: { canonical: "/category/" },
 };
 
 export default function CategoriesPage() {

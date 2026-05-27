@@ -7,6 +7,7 @@ import { faqPages } from "@/lib/faq-data";
 export const metadata = {
   title: "FAQ",
   description: "Frequently asked questions about Light No Fire including release date, multiplayer, dragons, and more.",
+  alternates: { canonical: "/faq/" },
 };
 
 export default function FAQPage() {

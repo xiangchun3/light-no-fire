@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       ? cat.description
       : "Browse categories for Light No Fire content.",
     keywords: cat?.keywords,
+    alternates: { canonical: `/category/${slug}/` },
   };
 }
 

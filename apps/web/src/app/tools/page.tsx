@@ -28,6 +28,7 @@ const tools = [
 export const metadata = {
   title: "Tools",
   description: "Light No Fire player tools: crafting calculator, coordinate converter, and resource tracker.",
+  alternates: { canonical: "/tools/" },
 };
 
 export default function ToolsPage() {

@@ -9,8 +9,14 @@ export function generateStaticParams() {
   return gameItems.map((item) => ({ slug: item.slug }));
 }
 
-export function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  return { title: "Item" };
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const item = gameItems.find((i) => i.slug === slug);
+  return {
+    title: item ? item.name : "Item",
+    description: item ? item.description : "Browse Light No Fire items.",
+    alternates: { canonical: `/items/${slug}/` },
+  };
 }
 
 export default async function ItemDetailPage({ params }: { params: Promise<{ slug: string }> }) {

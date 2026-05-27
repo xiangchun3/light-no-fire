@@ -8,6 +8,7 @@ import { Bug } from "lucide-react";
 export const metadata = {
   title: "Creatures Database",
   description: "Bestiary of all creatures in Light No Fire including drops and locations.",
+  alternates: { canonical: "/creatures/" },
 };
 
 export default function CreaturesPage() {

@@ -8,6 +8,7 @@ import { Sword } from "lucide-react";
 export const metadata = {
   title: "Items Database",
   description: "Browse all items in Light No Fire including weapons, materials, and consumables.",
+  alternates: { canonical: "/items/" },
 };
 
 export default function ItemsPage() {

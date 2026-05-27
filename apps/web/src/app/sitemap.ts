@@ -4,6 +4,8 @@ import { getWikiSlugs } from "@/lib/wiki-data";
 import { getBlogSlugs } from "@/lib/blog-data";
 import { getFAQSlugs } from "@/lib/faq-data";
 import { getCategorySlugs } from "@/lib/category-data";
+import { getNewsSlugs } from "@/lib/news-data";
+import { getGuideSlugs } from "@/lib/guides-data";
 
 export const dynamic = "force-static";
 
@@ -12,16 +14,23 @@ const baseUrl = "https://lightnofirewiki.com";
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "/",
-    "/wiki",
-    "/blog",
-    "/faq",
-    "/category",
-    "/map",
-    "/tools",
-    "/items",
-    "/creatures",
-    "/resources",
-    "/search",
+    "/wiki/",
+    "/blog/",
+    "/news/",
+    "/guides/",
+    "/faq/",
+    "/category/",
+    "/map/",
+    "/tools/",
+    "/items/",
+    "/creatures/",
+    "/resources/",
+    "/search/",
+    "/about/",
+    "/contact/",
+    "/privacy-policy/",
+    "/terms/",
+    "/cookies/",
   ].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
@@ -78,10 +87,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  const newsRoutes = getNewsSlugs().map((slug) => ({
+    url: `${baseUrl}/news/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  const guideRoutes = getGuideSlugs().map((slug) => ({
+    url: `${baseUrl}/guides/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.65,
+  }));
+
   return [
     ...staticRoutes,
     ...wikiRoutes,
     ...blogRoutes,
+    ...newsRoutes,
+    ...guideRoutes,
     ...faqRoutes,
     ...categoryRoutes,
     ...itemRoutes,

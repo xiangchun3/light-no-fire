@@ -80,7 +80,7 @@ export const categories: CategoryDef[] = [
     slug: "dragons",
     title: "Dragons",
     description:
-      "Everything about Light No Fire dragons: taming, flying, combat, types, and equipment. The ultimate dragon rider resource.",
+      "Everything about Light No Fire dragons: taming, flying, combat, types, and equipment. Everything you need to know about riding dragons.",
     keywords: [
       "light no fire dragons",
       "light no fire dragon guide",

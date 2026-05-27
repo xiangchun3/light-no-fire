@@ -148,31 +148,36 @@ export function ContentRenderer({ content }: { content: string }) {
     }
 
     if (line.startsWith("### ")) {
+      const text = line.replace("### ", "").trim();
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
       elements.push(
-        <h3 key={i} className="text-lg font-semibold mt-6 mb-3 text-foreground">
-          {parseInline(line.replace("### ", ""))}
+        <h3 key={i} id={id} className="text-lg font-semibold mt-6 mb-3 text-foreground scroll-mt-24">
+          {parseInline(text)}
         </h3>
       );
     } else if (line.startsWith("## ")) {
       const heading = line.replace("## ", "").trim();
+      const id = heading.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
       if (heading.toLowerCase().includes("faq")) {
         inFaq = true;
         elements.push(
-          <h2 key={i} className="text-xl font-semibold mt-8 mb-3 text-foreground">
+          <h2 key={i} id={id} className="text-xl font-semibold mt-8 mb-3 text-foreground scroll-mt-24">
             {parseInline(heading)}
           </h2>
         );
       } else {
         elements.push(
-          <h2 key={i} className="text-xl font-semibold mt-8 mb-3 text-foreground">
+          <h2 key={i} id={id} className="text-xl font-semibold mt-8 mb-3 text-foreground scroll-mt-24">
             {parseInline(heading)}
           </h2>
         );
       }
     } else if (line.startsWith("# ")) {
+      const text = line.replace("# ", "").trim();
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
       elements.push(
-        <h1 key={i} className="text-2xl font-bold mt-8 mb-4 text-foreground">
-          {parseInline(line.replace("# ", ""))}
+        <h1 key={i} id={id} className="text-2xl font-bold mt-8 mb-4 text-foreground scroll-mt-24">
+          {parseInline(text)}
         </h1>
       );
     } else if (line.startsWith("- ")) {

@@ -8,6 +8,7 @@ import { Gem } from "lucide-react";
 export const metadata = {
   title: "Resources Database",
   description: "Find all resources in Light No Fire with locations, rarity, and uses.",
+  alternates: { canonical: "/resources/" },
 };
 
 export default function ResourcesPage() {

@@ -16,17 +16,17 @@ export const blogPosts: BlogPost[] = [
     category: "News",
     excerpt: "A complete roundup of all confirmed features, trailers, and developer interviews for Hello Games' upcoming fantasy survival epic.",
     keywords: ["everything we know about light no fire","light no fire confirmed features","light no fire 2025","light no fire trailers","light no fire developer interview"],
-    content: `Everything we know about Light No Fire continues to expand as Hello Games releases new trailers and developer commentary. This comprehensive roundup covers all confirmed features, speculative mechanics, and community analysis of the studio's most ambitious project since No Man's Sky.
+    content: `Everything we know about Light No Fire continues to expand as Hello Games releases new trailers and developer commentary. Here's what we know, what we think we know, and what the community is guessing.
 
 ## Confirmed Features From Official Sources
 
-Hello Games has confirmed several core systems through trailers and interviews. The game takes place on a single procedural fantasy planet with planet-scale exploration. Players tame and ride dragons for aerial traversal. Multiplayer cooperative exploration is supported. Deep crafting and building systems allow players to construct bases and forge equipment. Ocean exploration via boats extends the playable space beyond land.
+Hello Games confirmed a few core systems through trailers and interviews. One fantasy planet, not infinite. Dragon riding for long-distance travel. Co-op exploration with friends. Crafting and building for gear and bases. Boats for ocean areas.
 
 The procedural generation technology comes directly from No Man's Sky's engine but focuses on density rather than infinite variety. Sean Murray described the approach as taking what they learned from generating quintillions of planets and applying it to making one world feel truly alive.
 
 ## What Trailers Reveal
 
-The reveal trailer at The Game Awards 2023 established the fantasy aesthetic and dragon-riding core loop. Subsequent footage shows diverse biomes including forests, mountains, deserts, oceans, and volcanic regions. Creature variety appears substantial, with passive wildlife, aggressive predators, and massive boss encounters.
+The reveal trailer at The Game Awards 2023 established the fantasy aesthetic and dragon-riding core loop. Subsequent footage shows diverse biomes including forests, mountains, deserts, oceans, and volcanic regions. Creature variety seems substantial, with passive wildlife, aggressive predators, and massive boss encounters.
 
 Building footage shows terrain-integrated construction rather than flat-surface-only placement. Structures conform to cliff faces and hillsides. This suggests more organic base design compared to No Man's Sky's modular grid system.
 
@@ -80,29 +80,18 @@ Unconfirmed. No Man's Sky has limited mod support on PC.
     title: "Light No Fire vs No Man's Sky: Key Differences Explained",
     date: "2025-05-18",
     category: "Comparison",
-    excerpt: "How does Hello Games' next project compare to their previous masterpiece? We break down the differences in scale, gameplay, and design philosophy.",
+    excerpt: "Same studio, completely different game. Here's what's actually changing.",
     keywords: ["light no fire vs no mans sky","light no fire comparison","hello games comparison","no mans sky vs light no fire","light no fire differences"],
-    content: `Light No Fire vs No Man's Sky represents one of the most interesting sequel-adjacent comparisons in gaming. Hello Games is moving from infinite sci-fi planets to a single fantasy world. Understanding the differences helps players set appropriate expectations for what the studio is building next.
+    content: `No Man's Sky and Light No Fire share an engine and a studio, but little else. One is sci-fi solitude across infinite planets. The other is fantasy co-op on a single world. If you're expecting No Man's Sky with dragons, you'll be surprised — and maybe disappointed.
 
-## Scale Philosophy: Infinite vs. Deep
+**The scale flip**
+No Man's Sky spreads its development across quintillions of planets. Each gets a few algorithmic minutes of attention. Light No Fire dumps that same budget into one planet. The result? Individual regions with hand-placed ruins, persistent creature migration routes, and biomes that blend instead of border-switching. Players who called NMS planets "mile wide, inch deep" might find what they wanted here.
 
-No Man's Sky generates quintillions of planets across a simulated universe. Each planet offers unique flora, fauna, and geography, but individual planets have limited depth. Light No Fire inverts this philosophy. One planet receives the development attention that No Man's Sky spreads across infinite worlds.
+**Traversal isn't travel**
+A spaceship in No Man's Sky is a loading screen with a cockpit. You point, boost, and arrive. A dragon in Light No Fire has stamina, elemental affinities, and equipment slots. You bond with it, feed it, and panic when it goes down in a boss fight. It's closer to a companion animal than a vehicle.
 
-This density-over-breadth approach addresses a common No Man's Sky criticism. Players often describe individual planets as shallow despite the universe's vastness. Light No Fire's single world promises handcrafted points of interest, persistent ecosystems, and meaningful environmental storytelling.
-
-## Genre Shift: Sci-Fi to Fantasy
-
-No Man's Sky explores science fiction themes with alien creatures, space stations, and technology. Light No Fire embraces fantasy with dragons, magic-infused crystals, medieval architecture, and mythical creatures. This genre shift affects every system from traversal to combat to aesthetics.
-
-Fantasy settings allow different emotional tones. No Man's Sky evokes isolation and wonder at cosmic scale. Light No Fire appears to emphasize companionship with dragons, community through multiplayer, and adventure across a living world.
-
-## Traversal: Ships vs. Dragons
-
-No Man's Sky traversal relies on spaceships for interplanetary travel and exocraft for surface exploration. Light No Fire uses dragons for aerial traversal, boats for ocean travel, and foot exploration with climbing. The dragon represents a more personal traversal method than a spaceship. Players bond with their mount rather than simply piloting a vehicle.
-
-## Building Systems Compared
-
-No Man's Sky building uses modular pieces on flat surfaces with base computers defining build areas. Light No Fire trailers show terrain-integrated construction that conforms to landscape features. This organic approach creates more visually interesting structures but may limit precise placement.
+**Building got messy (in a good way)**
+No Man's Sky bases snap to flat grids. Clean, precise, and boring. Light No Fire lets walls bend around cliffs and roofs slope with hills. Your base looks like it grew there instead of being dropped from orbit. The tradeoff? You can't min-max placement pixel-perfect. Organic building rewards creativity, not spreadsheets.
 
 | Aspect | No Man's Sky | Light No Fire |
 |--------|-------------|---------------|
@@ -113,61 +102,26 @@ No Man's Sky building uses modular pieces on flat surfaces with base computers d
 | Multiplayer Focus | Shared universe | Co-op groups |
 | Release State | Fully updated | In development |
 
-## FAQ
-
-### Should No Man's Sky fans play Light No Fire?
-Yes, if you enjoy procedural exploration and survival crafting. The fantasy setting offers fresh aesthetics.
-
-### Will Light No Fire have the same post-launch support?
-Probably. Hello Games' free update model for No Man's Sky sets expectations for long-term content.
-
-### Which game has better graphics?
-Light No Fire uses newer technology and benefits from nearly a decade of engine improvements.
-
-### Can you play both games?
-Absolutely. They offer different experiences and will likely appeal to overlapping audiences.
-
-### Will Light No Fire fix No Man's Sky's problems?
-It addresses different design challenges. Density vs. scale is a philosophical choice, not a fix.
-
-## Related Guides
-- [Everything We Know](/blog/everything-we-know)
-- [Light No Fire Gameplay](/wiki/light-no-fire-gameplay)
-- [Light No Fire Map Size](/wiki/light-no-fire-map-size)
-- [Light No Fire Release Date](/wiki/light-no-fire-release-date)
-- [Dragons](/wiki/dragons)
-- [Biomes](/wiki/biomes)
-- [Crafting](/wiki/crafting)
-- [Multiplayer](/wiki/multiplayer)`
+**Should you play both?**
+Only if you like procedural worlds. The emotional tone is completely different. NMS is lonely wonder. Light No Fire looks like shared adventure. Same engine, different soul.`
   },
   {
     slug: "light-no-fire-map-size",
     title: "How Big Is Light No Fire Map? Planet-Scale Analysis",
     date: "2025-05-15",
     category: "Guide",
-    excerpt: "Analyzing the scale of the procedural world and what it means for exploration, travel time, and content density.",
+    excerpt: "Planet-scale sounds huge. Here's why the number doesn't matter as much as what's in it.",
     keywords: ["how big is light no fire map","light no fire map size analysis","light no fire planet scale","light no fire world size comparison","light no fire exploration scale"],
-    content: `How big is Light No Fire map? This question dominates community discussions because the answer fundamentally changes how players should approach the game. Hello Games describes the world as planet-scale, but what does that actually mean for gameplay, travel time, and exploration satisfaction?
+    content: `Everyone asks how big the map is. The real question is how much of it matters.
 
-## Understanding Procedural Scale
+**Handcrafted vs. procedural size**
+Skyrim is 37 square kilometers. Elden Ring is about 50. Zelda: TOTK hits 100 with sky islands. Light No Fire is a procedural sphere. You can fly in one direction and end up where you started. That sounds enormous — and it is — but raw square footage means nothing if it's empty.
 
-Traditional open-world games store terrain as fixed map files. Skyrim's world is approximately 37 square kilometers. Elden Ring spans roughly 50 square kilometers. Zelda: Tears of the Kingdom covers about 100 square kilometers including sky islands. Light No Fire uses procedural generation that creates terrain in real-time, meaning the traversable surface theoretically equals an entire planet.
+**Travel time is the real metric**
+Dragon flight across a continent looks like 10-15 minutes based on trailer scale. Boat hops between islands: 5-10 minutes. On foot through a single biome: 3-5 minutes. Those numbers put it in the same ballpark as modern open-world games. The difference is that Light No Fire has no border. Keep flying and you loop around.
 
-This procedural approach changes how we measure size. A handcrafted map has fixed boundaries. A procedural planet has spherical geometry with continuous surface generation. Players can theoretically walk or fly in one direction indefinitely, circumnavigating the globe.
-
-## Travel Time Estimates
-
-Based on trailer analysis, dragon flight speed appears comparable to fast mounts in other open-world games. Cross-continent flight might take 10-15 minutes. Boat travel between islands could take 5-10 minutes. On foot, crossing a single biome might take 3-5 minutes.
-
-These travel times suggest Hello Games carefully balanced scale against tedium. A world that takes too long to traverse discourages exploration. A world that feels too small loses immersion. The 10-15 minute cross-continent estimate hits a sweet spot where distance feels meaningful without becoming boring.
-
-## Content Density Concerns
-
-The biggest risk with massive worlds is emptiness. No Man's Sky's individual planets sometimes feel sparse despite beautiful visuals. Light No Fire addresses this by concentrating development on one world. Every biome receives handcrafted attention rather than algorithmic variation.
-
-Trailers show creatures, ruins, resources, and points of interest packed into relatively small areas. If this density holds across the entire planet, effective playable area could exceed any handcrafted open world.
-
-## Comparison Table
+**Density over distance**
+No Man's Sky planets are planet-scale too, and some of them feel like wallpaper. Pretty, but nothing to do. Light No Fire puts all its points of interest on one world. Trailers show ruins, creature herds, and resource clusters packed into small areas. If that density holds globally, the effective playable space dwarfs any flat-map game.
 
 | Game | Approximate Size | Notable Feature |
 |------|-----------------|----------------|
@@ -177,356 +131,263 @@ Trailers show creatures, ruins, resources, and points of interest packed into re
 | No Man's Sky | Planet-scale per planet | Infinite variety |
 | Light No Fire | Planet-scale | Single deep world |
 
-## FAQ
-
-### Can you explore the entire planet?
-Yes, based on official descriptions. The entire surface is traversable.
-
-### Are there invisible walls?
-No loading screens or invisible walls confirmed. Seamless traversal is a core feature.
-
-### How long to circumnavigate by dragon?
-Estimates suggest 30-60 minutes depending on dragon speed and rest stops.
-
-### Is the world round or flat?
-Round. Hello Games' procedural engine generates spherical planets.
-
-### Will the map expand after launch?
-Possibly through updates. No Man's Sky added significant content post-launch.
-
-## Related Guides
-- [Light No Fire World](/wiki/light-no-fire-world)
-- [Light No Fire Gameplay](/wiki/light-no-fire-gameplay)
-- [Fast Travel](/wiki/fast-travel)
-- [Ocean Exploration](/wiki/ocean-exploration)
-- [Coordinates](/wiki/coordinates)
-- [Travel](/wiki/travel)
-- [Light No Fire vs No Man's Sky](/blog/light-no-fire-vs-no-mans-sky)
-- [Everything We Know](/blog/everything-we-know)`
+**The risk**
+One planet means one ecosystem. If the procedural rules get repetitive — same cave layout, same ruin type, same creature spawn pattern every hundred kilometers — the novelty dies fast. Hello Games has to prove that their density claims hold up for dozens of hours, not just the carefully chosen trailer regions.`
   },
   {
     slug: "light-no-fire-release-date",
     title: "Light No Fire Release Date: Latest Speculation & Analysis",
     date: "2025-05-10",
     category: "News",
-    excerpt: "When can we expect to play? Breaking down the timeline, rumors, and realistic expectations for Hello Games' next release.",
+    excerpt: "Still no date. Here's why that's probably a good thing.",
     keywords: ["light no fire release date","light no fire launch","when is light no fire coming out","light no fire 2026","light no fire release speculation"],
-    content: `Light No Fire release date speculation intensifies with every new trailer and interview. Hello Games maintains deliberate silence about specific timelines, but analyzing development patterns, industry context, and trailer maturity reveals reasonable expectations for when this ambitious fantasy survival game might finally launch.
+    content: `Hello Games still hasn't named a release date. Fans are frustrated. But after 2016, the studio would rather ship late than ship broken.
 
-## Why Hello Games Won't Commit to a Date
+**Why they won't say 2026**
+Sean Murray learned the hard way that promising dates creates traps you can't escape. No Man's Sky was announced with features that didn't exist yet. The backlash lasted years. For Light No Fire, the rule is simple: if it's not in a working build, they don't talk about it. Trailers show gameplay, not CGI. Interviews mention confirmed mechanics, not dreams.
 
-Sean Murray learned expensive lessons from No Man's Sky's 2016 launch. Announcing features and dates before they were locked created impossible expectations that damaged the studio's reputation for years. For Light No Fire, the communication strategy emphasizes showing working systems rather than promising timelines.
+**Timeline math**
+Revealed at The Game Awards 2023. Development likely started 1-2 years before that. By end of 2025, that's 4-5 years total. For context: Avowed took 5 years. Baldur's Gate 3 took 6. Starfield took 8. Hello Games has the procedural engine from No Man's Sky already built, which shaves time off. 2026 is plausible. 2027 wouldn't be shocking.
 
-This approach frustrates eager fans but protects the studio from repeating history. Every trailer demonstrates actual gameplay rather than pre-rendered cinematics. Developer interviews focus on confirmed features rather than aspirational goals.
+**What could push it back**
+Multiplayer on a planet-scale world is hard. Dragon AI needs to feel alive, not scripted. Terrain-integrated building creates edge-case bugs that flat grids never had. The studio will delay rather than repeat 2016. That's annoying for fans, but better than another launch disaster.
 
-## Development Timeline Analysis
-
-Light No Fire revealed at The Game Awards in late 2023. Based on trailer quality and feature completeness shown, the game had likely been in development for at least two years prior. This puts total development time at approximately three to four years by 2025.
-
-Comparing to similar projects: Avowed took five years. Baldur's Gate 3 took six. Starfield took eight. Hello Games benefits from mature procedural technology inherited from No Man's Sky, potentially accelerating their timeline. A 2026 release would represent four to five years of development, which aligns with industry standards for ambitious open-world games.
-
-## Platform Strategy
-
-PC is confirmed as the lead platform. Console versions for PlayStation 5 and Xbox Series X|S are widely expected. Cross-platform play is anticipated based on No Man's Sky's implementation. A Nintendo Switch release seems unlikely given technical requirements.
-
-Day-one Game Pass inclusion is possible. Microsoft has strong relationships with independent studios, and No Man's Sky appeared on Game Pass. However, Hello Games' independence means they may prefer direct sales initially.
-
-## What Could Delay Release
-
-Several factors might push the game beyond 2026. Multiplayer stability testing for planet-scale worlds is technically demanding. Dragon AI and creature ecosystems require extensive balancing. Building system bugs in terrain-integrated construction could be complex to resolve.
-
-The studio's commitment to avoiding another controversial launch means they will delay rather than release unfinished. This patience benefits players but extends the wait.
-
-## FAQ
-
-### Is 2026 realistic?
-Yes, based on development timeline and trailer maturity.
-
-### Will there be a beta?
-Probably not. Hello Games avoids early access and beta programs.
-
-### What time of year might it launch?
-No pattern exists. No Man's Sky launched in August. Updates release throughout the year.
-
-### Will it be on Steam?
-Almost certainly yes. PC is confirmed and Steam is the dominant PC platform.
-
-### Can we trust the 2026 speculation?
-It is informed speculation, not confirmation. Treat all dates as estimates until Hello Games announces officially.
-
-## Related Guides
-- [Light No Fire Release Date Wiki](/wiki/light-no-fire-release-date)
-- [Light No Fire Gameplay](/wiki/light-no-fire-gameplay)
-- [Light No Fire Map Size](/wiki/light-no-fire-map-size)
-- [Everything We Know](/blog/everything-we-know)
-- [Light No Fire vs No Man's Sky](/blog/light-no-fire-vs-no-mans-sky)
-- [Dragons](/wiki/dragons)
-- [Multiplayer](/wiki/multiplayer)
-- [Crafting](/wiki/crafting)`
+**Platform guesses**
+PC is confirmed. PS5 and Xbox Series X|S are expected based on No Man's Sky's history. Game Pass is possible — Microsoft likes indie studios and No Man's Sky was on it. Switch is unlikely unless they do a massive downgrade port later.`
   },
   {
     slug: "top-5-dragons",
     title: "Top 5 Dragons We Want to See in Light No Fire",
     date: "2025-05-05",
     category: "List",
-    excerpt: "Community wishlist for the most epic dragon designs and abilities in Hello Games' upcoming fantasy adventure.",
+    excerpt: "Five dragon concepts the community actually wants — ranked by how likely they are to show up.",
     keywords: ["light no fire dragons","top dragons light no fire","dragon wishlist","light no fire dragon types","best dragons light no fire"],
-    content: `Dragons are the heart of Light No Fire. Based on trailer footage and community wishlists, here are the top 5 dragon types players hope to encounter, tame, and ride across the procedural fantasy world.
+    content: `Dragons aren't confirmed to have types yet, but the community has already picked favorites. Based on trailer hints and forum chatter, here's what's realistic versus what's wishful thinking.
 
-## 1. Storm Drake
+**1. Storm Drake — Plausible**
+Lightning-themed mounts fit the highland biome perfectly. Trailer footage shows electrical effects during flight in storm regions. Taming one during an active storm would be a natural progression — dangerous, cinematic, and rewarding. If any "elemental" dragon type makes it in, this is the safest bet.
 
-The Storm Drake tops community wishlists for its visual spectacle and gameplay potential. Lightning-infused scales crackle with energy during flight. Thunderstorm biomes serve as natural habitats. Combat applications include lightning breath attacks and EMP-style discharges that disable mechanical traps or stun groups of enemies.
+**2. Leviathan Wyrm — Unlikely at launch**
+An aquatic dragon sounds amazing. Submerge, swim, surface, fly. The problem is animation complexity. Underwater movement rigs are expensive to build and test. Hello Games has enough on their plate with aerial dragons. Expect this as post-launch content, not day one.
 
-Community speculation suggests Storm Drakes require taming during active storms, making the acquisition process itself an event. Riders might gain lightning resistance or storm-vision abilities.
+**3. Ember Whelp — Basically confirmed**
+Small fire drakes appear in volcanic biome footage. They're too small to be adult dragons, which suggests a juvenile or "whelp" tier. Early-game players bonding with a small drake that grows into a full mount is a classic progression loop. This one feels almost guaranteed.
 
-## 2. Leviathan Wyrm
+**4. Frost Ancient — Probable**
+Snow biome + giant ice creature is low-hanging fruit for fantasy design. The challenge is making it distinct from the Storm Drake beyond color palette. If Hello Games does this, expect ice bridge mechanics or freeze breath that alters terrain temporarily.
 
-Ocean exploration needs aquatic dragon variants. The Leviathan Wyrm bridges air and water traversal, diving beneath waves and surfacing for flight. This amphibious capability eliminates mount-switching when approaching ocean content from inland bases.
+**5. Shadow Wing — Cool but niche**
+Stealth dragons are a great concept until you realize most of the game happens during daylight. A mount that's only useful at night is a hard sell. Might work better as a rare cosmetic variant than a core gameplay type.
 
-Underwater combat applications include sonar pulses and whirlpool generation. The Leviathan Wyrm represents the most requested non-traditional dragon type because it expands traversal into underwater biomes.
-
-## 3. Ember Whelp
-
-Small but fierce, the Ember Whelp serves as an early-game companion. Unlike massive dragons requiring advanced taming, Ember Whelps might bond with new players through simple quests. Their fire-breathing provides combat assistance and campfire functionality for survival mechanics.
-
-The Ember Whelp's small size allows access to narrow spaces impossible for larger mounts. Caves, dense forests, and ruins become traversable. This utility makes the Whelp valuable even after acquiring larger dragons.
-
-## 4. Frost Ancient
-
-Massive ice dragons guarding northern peaks represent endgame taming challenges. Frost Ancients likely require cold-weather gear, specialized bait, and possibly group coordination to subdue. Their breath weapons freeze enemies and create ice bridges across chasms.
-
-The Frost Ancient appeals to players who want their mount to feel like a force of nature rather than a vehicle. These dragons should dwarf standard mounts and create awe-inspiring silhouettes against snowy landscapes.
-
-## 5. Shadow Wing
-
-Nocturnal predators with camouflage abilities offer stealth gameplay opportunities. Shadow Wings blend into darkness, becoming nearly invisible. This stealth capability enables surprise combat approaches and safe night travel through hostile territories.
-
-Taming a Shadow Wing likely requires nighttime encounters and patience. Their nocturnal nature makes them elusive but rewarding for dedicated players.
-
-| Dragon | Element | Best Biome | Difficulty |
+| Dragon | Element | Best Biome | Likelihood |
 |--------|---------|-----------|------------|
-| Storm Drake | Lightning | Highlands | Hard |
-| Leviathan Wyrm | Water | Ocean | Hard |
-| Ember Whelp | Fire | Volcanic | Easy |
-| Frost Ancient | Ice | Snow | Very Hard |
-| Shadow Wing | Dark | Caves | Medium |
-
-## FAQ
-
-### Can you have multiple dragons?
-Likely yes, with a stable or roster system for switching between mounts.
-
-### Do dragons evolve or grow?
-Unconfirmed. Community hopes for growth mechanics or evolution paths.
-
-### Are dragons the only mounts?
-Probably not. Land and aquatic mounts likely exist for specialized situations.
-
-### Can dragons die permanently?
-Most games avoid permanent companion death. Expect recovery or revival mechanics.
-
-### Will there be dragon breeding?
-Unconfirmed but highly requested by the community.
-
-## Related Guides
-- [Dragons](/wiki/dragons)
-- [Light No Fire Mounts](/wiki/light-no-fire-mounts)
-- [Flying Creatures](/wiki/flying-creatures)
-- [Mount Creatures](/wiki/mount-creatures)
-- [Rare Creatures](/wiki/rare-creatures)
-- [Light No Fire Gameplay](/wiki/light-no-fire-gameplay)
-- [Volcano Biome](/wiki/volcano-biome)
-- [Mountain Biome](/wiki/mountain-biome)`
+| Storm Drake | Lightning | Highlands | High |
+| Leviathan Wyrm | Water | Ocean | Low |
+| Ember Whelp | Fire | Volcanic | Very High |
+| Frost Ancient | Ice | Snow | Medium |
+| Shadow Wing | Dark | Caves | Low |`
   },
   {
     slug: "light-no-fire-release-date-explained",
     title: "Light No Fire Release Date Explained: Why the Wait Makes Sense",
     date: "2025-05-25",
     category: "News",
-    excerpt: "Breaking down why Hello Games is taking their time and what it means for the final quality of Light No Fire.",
+    excerpt: "The long wait isn't a delay — it's a different development philosophy.",
     keywords: ["light no fire release date explained","why is light no fire delayed","light no fire development time","hello games development","light no fire quality"],
-    content: `Light No Fire release date explained requires understanding Hello Games' history, the technical challenges of procedural fantasy worlds, and the gaming industry's shift toward quality-over-speed development cycles. The wait frustrates eager fans, but analysis suggests the extended timeline ultimately benefits players.
+    content: `Fans want a date. Hello Games won't give one. Here's what's actually happening behind the silence.
 
-## The No Man's Sky Lesson
+**2016 changed everything**
+No Man's Sky launched broken and over-promised. The backlash nearly killed the studio. Eight years of free updates fixed it, but the scars remain. Murray has said publicly that the psychological toll of that launch was worse than anyone outside the studio understands. For Light No Fire, the policy is: show working features, never promise dates, never announce mechanics that aren't locked.
 
-No Man's Sky launched in August 2016 after intense hype and ambitious promises. The reality fell short of expectations, creating one of gaming's most notorious launch controversies. Hello Games spent the next eight years rebuilding trust through free updates that gradually fulfilled the original vision.
+**Fantasy is harder than sci-fi**
+Alien planets get a pass on weirdness. Players don't know what a proper Thamium9 landscape looks like. But everyone knows what a forest should look like. Mountains need real geology. Dragons need realistic weight and wing physics. The No Man's Sky engine was built for strange worlds. Retuning it for familiar biomes took more work than most people assume.
 
-This history directly shapes Light No Fire's development. Sean Murray has spoken about the psychological toll of that launch and the studio's commitment to avoiding repetition. Every trailer for Light No Fire shows actual gameplay rather than aspirational concepts. The team refuses to announce features until they are locked and working.
+**Small team, big scope**
+Hello Games is roughly 25 people. Bethesda has hundreds. Larian has nearly 400. A team of 25 building a planet-scale co-op survival game with terrain-integrated building and dragon AI is either incredibly efficient or incredibly slow. The trailers suggest they're choosing slow and careful over fast and risky.
 
-## Technical Complexity of Fantasy Procedural Worlds
-
-Procedural generation for science fiction is well-understood. Alien planets can look strange because players have no real-world reference. Fantasy worlds face higher scrutiny. Forests must look like forests. Mountains must follow geological logic. Dragons must animate convincingly.
-
-Hello Games adapted their No Man's Sky engine for fantasy, but this adaptation is not trivial. Terrain generation algorithms designed for alien worlds require retuning for Earth-like biomes. Creature AI must handle grounded ecosystems rather than exotic wildlife. Building systems need to conform to natural terrain rather than flat grids.
-
-## Industry Context: Longer Development Cycles
-
-Game development timelines have expanded across the industry. Baldur's Gate 3 took six years. Starfield took eight. Elden Ring required five years despite FromSoftware's established engine. Independent studios face additional challenges with smaller teams and limited budgets.
-
-Hello Games employs approximately 20-30 people. For comparison, Bethesda has hundreds. Creating a planet-scale fantasy world with a team this size requires either miracle efficiency or extended timelines. The trailers suggest they chose the patient approach.
-
-## What the Trailers Actually Show
-
-Released footage demonstrates working systems rather than vertical slices. Dragon flight looks smooth and responsive. Environmental rendering shows advanced lighting and weather. Creature models appear detailed and animated. These are not pre-rendered cinematics but actual gameplay captured from working builds.
-
-The gap between working build and finished product involves polish, balance, and content volume. A dragon that flies correctly still needs ten biome variants. A crafting system that functions needs hundreds of recipes. This content multiplication explains why working systems do not immediately translate to release readiness.
-
-## FAQ
-
-### Could the game release in 2025?
-Extremely unlikely based on current trailer scope and industry timelines.
-
-### Is the delay because of problems?
-Probably not. Extended development reflects scope and caution rather than technical crises.
-
-### Will the wait be worth it?
-If Hello Games' post-No Man's Sky track record continues, yes. Their updates consistently improved quality.
-
-### Should fans manage expectations?
-Always. No game can satisfy infinite hype. Expect an ambitious but imperfect launch.
-
-### What if it launches unfinished?
-Hello Games' free update model suggests post-launch support regardless of launch state.
-
-## Related Guides
-- [Light No Fire Release Date](/wiki/light-no-fire-release-date)
-- [Light No Fire Release Date Blog](/blog/light-no-fire-release-date)
-- [Everything We Know](/blog/everything-we-know)
-- [Light No Fire vs No Man's Sky](/blog/light-no-fire-vs-no-mans-sky)
-- [Light No Fire Gameplay](/wiki/light-no-fire-gameplay)
-- [Light No Fire Map Size](/wiki/light-no-fire-map-size)
-- [Light No Fire World](/wiki/light-no-fire-world)
-- [Dragons](/wiki/dragons)`
+**What trailers actually prove**
+The footage isn't vertical slices — it's working systems. Dragons fly. Weather renders. Creatures animate. That's not CGI. But a working dragon needs ten biome variants. A working crafting bench needs two hundred recipes. Working systems multiply into massive content requirements. That's why "it looks playable" doesn't mean "it's almost done."`
   },
   {
     slug: "how-big-is-light-no-fire-map",
     title: "How Big Is Light No Fire Map? A Deep Dive Into Planet-Scale Worlds",
     date: "2025-05-22",
     category: "Guide",
-    excerpt: "Exploring what planet-scale really means for gameplay, travel, and the future of open-world design.",
+    excerpt: "Planet-scale is a tech demo until you fill it. Here's how Hello Games plans to avoid empty space.",
     keywords: ["how big is light no fire map","light no fire planet scale","light no fire map size deep dive","light no fire open world size","light no fire world exploration"],
-    content: `How big is Light No Fire map? This seemingly simple question opens discussions about procedural generation, game design philosophy, and the future of open-world exploration. Hello Games promises a planet-scale world, but understanding what that means requires looking beyond marketing language into technical realities.
+    content: `"Planet-scale" is the marketing phrase everyone repeats. But a big empty world is worse than a small full one. Here's what the trailers actually tell us about density.
 
-## What Planet-Scale Means Technically
+**The empty planet problem**
+No Man's Sky proved that procedural scale without density gets boring fast. You fly for ten minutes, see three variations of the same plant, and land on another planet. Light No Fire can't do that — there's nowhere else to go. Every cave, every coastline, every mountain ridge needs a reason to exist.
 
-Most open-world games use flat maps with artificial boundaries. Skyrim wraps its world in impassable mountains. Elden Ring uses cliffs and fog walls. These are design necessities for handcrafted worlds with finite development resources.
+**Travel time as pacing**
+A ten-minute dragon flight between continents isn't a bug; it's the design. It forces preparation: food, potions, repair materials. You can't just fast-travel everywhere. The world has to feel large enough that crossing it matters, but small enough that you don't alt-tab during transit. Trailers suggest Hello Games is aiming for 10-15 minute cross-continent flights. That's longer than Elden Ring, shorter than crossing a NMS system.
 
-Procedural generation removes these limitations. Light No Fire generates terrain in real-time as players explore. The world is an actual sphere that players can circumnavigate. This spherical geometry creates unique design challenges. Distances compress near poles. Biomes distribute based on latitude and altitude. Weather systems flow across curved surfaces.
+**Handcrafted pockets in procedural noise**
+The smart money says the world is mostly procedural, but points of interest are hand-placed using procedural rules. Think "ruins every 500 meters near rivers" or "dragon nests only on volcanic peaks above 2000 meters." This hybrid approach gives infinite surface area with guaranteed density.
 
-## The Density Problem
-
-Infinite or planet-scale worlds face a critical challenge: emptiness. No Man's Sky's individual planets sometimes feel sparse despite beautiful visuals. Players fly for minutes without encountering meaningful content. Light No Fire addresses this by concentrating all development resources on one world.
-
-Trailers show packed environments. Creatures roam in groups. Ruins appear regularly. Resources cluster logically. If this density holds across the entire planet, Light No Fire could offer more meaningful exploration per square kilometer than any handcrafted open world.
-
-## Travel Time as Design
-
-Game designers use travel time to control pacing. A ten-minute journey between locations forces players to prepare, plan routes, and encounter emergent events. A one-minute journey makes the world feel like a theme park.
-
-Based on dragon flight speed shown in trailers, cross-continent travel might take 10-15 minutes. This duration is comparable to crossing Zelda: TOTK's surface. It feels substantial without becoming tedious. Boat travel between islands adds 5-10 minutes. Foot exploration within biomes takes 3-5 minutes. These layered travel times create natural pacing rhythms.
-
-## Comparison to Handcrafted Worlds
-
-| Game | Map Type | Travel Time (Cross-Map) | Density |
-|------|---------|------------------------|---------|
+| Game | Map Type | Cross-Map Travel | Density |
+|------|---------|------------------|---------|
 | Skyrim | Flat | ~15 minutes | Very High |
 | Elden Ring | Flat | ~20 minutes | High |
 | Zelda TOTK | Flat + Sky | ~25 minutes | High |
 | No Man's Sky | Spherical | Varies | Low-Medium |
 | Light No Fire | Spherical | ~30-60 minutes | Target: High |
 
-## Community Mapping Efforts
-
-Even before release, players discuss collaborative mapping. Shared maps marking rare resources, dragon nests, and hidden dungeons could become essential community tools. The interactive map on this wiki will support these efforts with coordinate tracking and marker sharing.
-
-Procedural worlds create unique mapping challenges. Landmarks might not be perfectly consistent between playthroughs. However, major biomes and points of interest likely follow consistent generation rules that enable reliable mapping.
-
-## FAQ
-
-### Will the world feel too big?
-Density matters more than absolute size. Trailers suggest high content density.
-
-### Can you get lost?
-Probably. Navigation tools like maps and coordinates will be essential.
-
-### Are there fast travel points?
-Unconfirmed, but likely given the world scale.
-
-### Does the world rotate or have seasons?
-Unconfirmed. Day-night cycles are visible in trailers.
-
-### How does multiplayer work across such a large world?
-Players likely group together or meet at specific locations rather than sharing the entire planet simultaneously.
-
-## Related Guides
-- [Light No Fire Map Size](/wiki/light-no-fire-map-size)
-- [Light No Fire World](/wiki/light-no-fire-world)
-- [Fast Travel](/wiki/fast-travel)
-- [Coordinates](/wiki/coordinates)
-- [Ocean Exploration](/wiki/ocean-exploration)
-- [Travel](/wiki/travel)
-- [Light No Fire Gameplay](/wiki/light-no-fire-gameplay)
-- [Light No Fire vs No Man's Sky](/blog/light-no-fire-vs-no-mans-sky)`
+**The mapping meta**
+Before the game even launches, Discord servers are planning collaborative maps. If biomes follow consistent generation rules — "forests always between 0-30 degrees latitude" — players can build reliable atlases. If everything is pure random noise, mapping becomes useless. Hello Games knows this. Expect enough consistency to reward exploration without making every world identical.`
   },
   {
     slug: "is-light-no-fire-multiplayer",
     title: "Is Light No Fire Multiplayer? Co-op Features Explained",
     date: "2025-05-19",
     category: "Guide",
-    excerpt: "Everything we know about cooperative play, group sizes, and how multiplayer changes the Light No Fire experience.",
+    excerpt: "Yes, it's co-op. No, it's not an MMO. Here's what group play actually looks like.",
     keywords: ["is light no fire multiplayer","light no fire co op","light no fire online","light no fire friends","light no fire multiplayer features"],
-    content: `Is Light No Fire multiplayer? Yes, Hello Games confirmed cooperative support. But the details matter. How many players can join? What can they do together? How does multiplayer affect dragon taming, base building, and world exploration? This guide breaks down everything we know and what community analysis suggests.
+    content: `Hello Games confirmed co-op. That doesn't mean it's an MMO. Here's what we actually know about group play.
 
-## Confirmed Multiplayer Features
+**Confirmed: small-group co-op**
+The studio said players can explore, build, and fight together. That's it. No party size announced. No server architecture detailed. Based on No Man's Sky's model, expect 4-8 players in a session, not 64-player survival servers.
 
-Hello Games stated that players can explore together, build shared bases, and experience the world as a group. This confirmation came through interviews rather than detailed trailers. The studio emphasizes cooperation over competition, following the philosophy established in No Man's Sky's NEXT update.
+**What co-op changes**
+Solo survival is tense. Every berry matters. Co-op turns scarcity into logistics. One player farms, one crafts, one builds, one explores. Combat shifts from "run or die" to "tank and spank." Dragon taming in groups is faster — someone distracts the parent while someone else bonds with the whelp.
 
-The exact maximum party size remains unconfirmed. No Man's Sky supports up to 32 players in Nexus events but emphasizes smaller groups for regular gameplay. Light No Fire likely targets 4-8 players for optimal cooperative survival experiences.
+**Base building gets communal**
+Shared bases are confirmed. What isn't confirmed is how permissions work. Can anyone delete walls? Is there a shared storage chest or do you drop items on the ground like animals? No Man's Sky has limited base permissions; Light No Fire needs better tools if they want groups to build actual settlements.
 
-## How Multiplayer Changes Survival
+**Cross-play is expected, not guaranteed**
+No Man's Sky has full cross-play. Fans assume Light No Fire will too. The technical reality is harder: PC loads terrain faster, consoles have different memory budgets, and synchronizing a planet-scale world across hardware tiers isn't trivial. Don't be shocked if cross-play ships a few months after launch.`
+  },
+  {
+    slug: "light-no-fire-survival-mechanics",
+    title: "Light No Fire Survival Mechanics: Hunger, Weather & Permadeath Risks",
+    date: "2025-05-27",
+    category: "Guide",
+    excerpt: "Hunger, weather, and inventory limits — but not the annoying kind.",
+    keywords: ["light no fire survival mechanics","light no fire survival","light no fire hunger","light no fire weather","light no fire survival guide","light no fire temperature","light no fire camping","light no fire health system","light no fire survival gameplay","light no fire difficulty"],
+    content: `Light No Fire has survival mechanics, but Hello Games learned from No Man's Sky that punishing difficulty drives casual players away. Expect a middle ground: survival that matters, not survival that dominates.
 
-Solo survival creates tension. Every resource matters. Every combat encounter risks significant loss. Multiplayer survival transforms this dynamic. Resource gathering accelerates with multiple players. Combat becomes tactical rather than desperate. Building projects scale from solo shelters to communal fortresses.
+**The need loop**
+Hunger, thirst, and rest are confirmed. Food comes from hunting, foraging, and eventually farming. Water is everywhere but might need purification in swamp or volcanic zones. Rest happens at bedrolls or base beds and provides stamina recovery bonuses.
 
-Dragon taming in multiplayer raises fascinating questions. Can multiple players ride one dragon? Can players coordinate aerial formations? Trailer footage shows single riders, but dragon models appear large enough for potential multi-passenger configurations.
+The key is frequency. Hardcore survival games make you eat every five minutes. Light No Fire seems to target longer cycles — maybe one meal per in-game day, one sleep per night cycle. Enough to keep you thinking about it, not enough to interrupt exploration constantly.
 
-## Base Building in Groups
+| Survival Need | Source | Penalty for Neglect | Annoyance Level |
+|---------------|--------|---------------------|-----------------|
+| Hunger | Hunting, farming, foraging | Stamina loss | Low |
+| Thirst | Rivers, rain, wells | Rapid health drain | Medium |
+| Rest | Beds, sleeping bags | Reduced stats | Low |
+| Temperature | Armor, shelter, fire | Health drain, slow | Medium |
+| Health | Potions, food, rest | Death | Medium |
 
-Shared construction represents one of multiplayer's most appealing features. Multiple players building simultaneously could create massive structures impossible for solo players. Guild halls, defensive fortresses, and trading outposts become community projects rather than individual achievements.
+**Weather hits hard**
+Storms aren't just pretty. Blizzards blind you. Sandstorms chip health. Lightning strikes metal armor. Dragons refuse to fly in extreme wind. The smart play is shelter, not heroics.
 
-Building permissions and resource sharing require careful design. No Man's Sky allows base sharing but limits editing permissions. Light No Fire might expand these systems with role-based access, shared storage, and collaborative planning tools.
+**Inventory is your real enemy**
+You have limited bag space. Every ore chunk, every herb bundle, every spare weapon takes a slot. This forces hard choices: bring food or bring building materials? The answer depends on where you're going, and getting it wrong means a long walk back to base.
 
-## Cross-Platform Expectations
+**Death is inconvenient, not catastrophic**
+Respawn at your bedroll or last shrine. Dropped items stay on your corpse for 30 minutes. Teammates can loot your body and return gear. No permadeath confirmed — Hello Games isn't that cruel.`
+  },
+  {
+    slug: "light-no-fire-building-system",
+    title: "Light No Fire Building System: How Construction Works in the Fantasy World",
+    date: "2025-05-26",
+    category: "Guide",
+    excerpt: "No flat grids. Walls bend around cliffs. Here's how construction actually works.",
+    keywords: ["light no fire building system","light no fire building guide","light no fire construction","light no fire base building","light no fire house building","light no fire building mechanics","light no fire vs no mans sky building","light no fire terrain building","light no fire building materials","light no fire building tutorial"],
+    content: `Light No Fire doesn't use flat grids. Your walls snap to cliff faces, slope with hills, and cantilever over gaps. It looks organic — and sometimes frustrating.
 
-No Man's Sky supports full cross-platform play. Players strongly expect Light No Fire to maintain this standard. Cross-play ensures friend groups can play together regardless of whether they own PCs, PlayStations, or Xboxes.
+**Terrain integration**
+No Man's Sky bases sit on flat pads. Light No Fire bases grow out of the landscape. A wall placed on a hillside bends to match the angle. A roof over a ravine stretches between anchor points. The upside: your base looks like it belongs there. The downside: you can't min-max placement pixel-perfect.
 
-The technical implementation is challenging. Different platforms have different performance characteristics. A PC player might load terrain faster than a console player. Hello Games must synchronize these experiences without compromising anyone's gameplay.
+**Materials matter functionally**
+Wood is cheap and fast but burns in fire biomes and rots in swamps. Stone is heavy and slow to place but immune to weather and most creature attacks. Iron reinforcement lets you build taller. Obsidian accents are fireproof and look cool. Crystal provides light without fuel.
 
-## FAQ
+| Material | Best For | Durability | Weather Resistance |
+|----------|----------|------------|-------------------|
+| Timber | Cottages, interiors | Low | Poor |
+| Stone | Fortresses, walls | High | Good |
+| Iron | Reinforcement, gates | Very High | Excellent |
+| Obsidian | Decorative, magical | High | Fireproof |
+| Crystal | Lighting, accents | Medium | Variable |
 
-### Can you play entirely solo?
-Yes. Single-player mode is confirmed with optional multiplayer.
+**Physics exist**
+Unsupported overhangs collapse. Tall towers need thick foundations. Bridges need anchors on both ends. You can't build sky platforms without support pillars. This annoys architects who want floating castles, but it prevents the visual chaos of physics-defying bases.
 
-### Is there PvP?
-Not confirmed. The studio focuses on cooperative gameplay.
+**Defensive design**
+Walls slow creatures. Watchtowers spot raids early. Narrow gates funnel enemies into chokepoints. But the best defense is terrain: build on a cliff and half your perimeter is already secure. Build in a forest and large creatures can't reach your walls.
 
-### How do you join friends?
-Probably through invite codes or friend lists, similar to No Man's Sky.
+**Co-op building**
+Shared bases are confirmed. Whether you get permission controls or a free-for-all is unknown. Expect at least basic locks on storage chests — nobody wants to log in and find their iron stash gone.`
+  },
+  {
+    slug: "light-no-fire-dragon-guide",
+    title: "Light No Fire Dragon Guide: How to Find, Tame & Master Your Mount",
+    date: "2025-05-29",
+    category: "Guide",
+    excerpt: "Finding them is easy. Taming them without getting eaten is the hard part.",
+    keywords: ["light no fire dragon guide","light no fire dragon taming","light no fire dragon flying","light no fire dragon combat","light no fire dragon types","light no fire dragon mounts","light no fire rare dragon","light no fire dragon equipment","light no fire dragon rider","light no fire dragon abilities"],
+    content: `Dragons are the headline feature. Here's what the trailers and community analysis actually tell us about finding, taming, and fighting with them.
 
-### Can strangers join your world?
-Unconfirmed. Privacy settings likely exist.
+**Where to look**
+Dragons aren't random spawns. Forest drakes nest in canopy tops. Fire types bask near lava. Storm drakes ride updrafts in highland thunderheads. If you're searching randomly, you're wasting time. Learn the habitat, then hunt.
 
-### Does multiplayer affect difficulty?
-Probably. More players likely mean tougher enemies or scaled resource requirements.
+| Dragon Type | Preferred Biome | Active When | Taming Difficulty |
+|-------------|----------------|-------------|-------------------|
+| Forest Drake | Forests | Dawn, dusk | Easy |
+| Mountain Griffin | Peaks | Midday | Medium |
+| Fire Dragon | Volcanoes | Night | Hard |
+| Storm Drake | Highlands | Storms | Hard |
+| Frost Ancient | Snow | Blizzards | Very Hard |
 
-## Related Guides
-- [Light No Fire Multiplayer](/wiki/light-no-fire-multiplayer)
-- [Light No Fire Gameplay](/wiki/light-no-fire-gameplay)
-- [Base Building](/wiki/base-building)
-- [Light No Fire Building](/wiki/light-no-fire-building)
-- [World Events](/wiki/world-events)
-- [Light No Fire Release Date](/wiki/light-no-fire-release-date)
-- [Dragons](/wiki/dragons)
-- [Travel](/wiki/travel)`
+**The taming process**
+You don't just walk up and click "ride." Preparation matters: fire gear for volcanoes, cold resist for snow peaks, bait made from local resources. Approach slow — sudden movement triggers aggression. Offer bait from a distance. Wait.
+
+Each type probably has a unique taming quirk. Storm drakes might only bond during active lightning. Frost ancients might require group coordination to subdue. The community hasn't figured out the exact mechanics yet, but expect trial and error.
+
+**Equipment changes everything**
+Combat saddles add armor plating and weapon hardpoints. Racing saddles boost speed at the cost of defense. Cargo saddles turn your dragon into a flying pack mule. You can't swap mid-flight, so choose before you leave base.
+
+**Aerial combat basics**
+Altitude is everything. Higher ground lets you pick engagements. Dive attacks deal bonus damage but cost stamina. Hovering in place is a death sentence against ranged enemies — keep moving.
+
+**Maintenance is real**
+Dragons have stamina, hunger, and injury states. Skip feeding and performance drops. Fly exhausted and you both crash. Heal at base roosts or with specialized feed. Treat it like a companion, not a motorcycle.`
+  },
+  {
+    slug: "light-no-fire-trailer-analysis",
+    title: "Light No Fire Trailer Analysis: Every Confirmed Feature Frame by Frame",
+    date: "2025-05-24",
+    category: "Analysis",
+    excerpt: "What the trailers actually show — separated from fan imagination.",
+    keywords: ["light no fire trailer analysis","light no fire trailer breakdown","light no fire confirmed features","light no fire gameplay trailer","light no fire reveal trailer","light no fire trailer secrets","light no fire what we know","light no fire trailer easter eggs","light no fire frame by frame","light no fire trailer comparison"],
+    content: `The Light No Fire community treats every trailer like a crime scene. Here's what holds up in court versus what's fan fiction.
+
+**TGA 2023 Reveal — Confirmed**
+Dragon riding with altitude control. Multiple biomes visible in sweep shots. Day-night cycle. Creature variety. All in-engine, not pre-rendered. This trailer set the visual benchmark.
+
+**Gameplay Teaser — Confirmed**
+Flight mechanics look smooth. Creature AI shows herd behaviors and predator reactions. Building footage shows terrain-integrated placement.
+
+**Developer Diary — Mostly Confirmed**
+Building system details. Crafting station glimpses. Murray confirms co-op in interview audio.
+
+**Biome Showcase — Partially Confirmed**
+Environmental variety is visible. Weather effects shown. But some "biomes" in the trailer might be the same region under different lighting conditions.
+
+| Trailer | Confirmed | Speculated |
+|---------|-----------|------------|
+| TGA 2023 Reveal | Dragons, biomes, world scale | Multiplayer details |
+| Gameplay Teaser | Flight mechanics, creature AI | Combat depth |
+| Developer Diary | Building system, crafting | Progression systems |
+| Biome Showcase | Environmental variety | Weather mechanics |
+
+**UI tells the truth**
+Health bars, stamina meters, and a dragon bond indicator are visible in freeze-frames. The minimalist HUD suggests immersion is a priority. No XP bar visible — progression might be gear-based rather than level-based.
+
+**What's NOT in the trailers**
+Magic spellcasting beyond dragon breath. Guild systems. Player trading. PvP. These might exist, but Hello Games isn't showing them yet. After 2016, absence of footage means absence of promise.`
   },
   {
     slug: "light-no-fire-gameplay-analysis",
@@ -541,9 +402,9 @@ Probably. More players likely mean tougher enemies or scaled resource requiremen
 
 Dragon riding is undeniable. Multiple trailers show players mounted on dragons flying across varied biomes. The flight mechanics appear smooth with altitude control, diving, and gliding. Dragons breathe fire or elemental attacks. This core loop is the game's signature feature.
 
-Procedural world generation is confirmed through official descriptions. The planet-scale world generates terrain in real-time. Biomes transition organically. Weather systems affect visibility and presumably gameplay.
+Official descriptions confirmed procedural world generation. The planet-scale world generates terrain in real-time. Biomes transition organically. Weather systems affect visibility and presumably gameplay.
 
-Base building appears in brief shots. Structures integrate with terrain rather than sitting on flat platforms. This terrain-aware construction distinguishes Light No Fire from No Man's Sky's modular grid system.
+Base building seems in brief shots. Structures integrate with terrain rather than sitting on flat platforms. This terrain-aware construction distinguishes Light No Fire from No Man's Sky's modular grid system.
 
 ## Strongly Implied But Unconfirmed
 
@@ -561,7 +422,7 @@ Guild systems, player trading economies, and persistent world events are communi
 
 ## What the UI Reveals
 
-Trailer UI elements show health bars, stamina meters, and possibly dragon bond indicators. The minimalist interface suggests Hello Games prioritizes immersion over information density. This approach matches No Man's Sky's clean HUD design.
+Trailer UI elements show health bars, stamina meters, and maybe dragon bond indicators. The minimalist interface suggests Hello Games prioritizes immersion over information density. This approach matches No Man's Sky's clean HUD design.
 
 ## FAQ
 
@@ -613,7 +474,7 @@ This vertical design creates three-dimensional exploration. Players do not simpl
 
 ## Discovery Without Waypoints
 
-Waypoint-heavy open worlds hand players destinations. Light No Fire appears to emphasize discovery through observation. Smoke on the horizon suggests a settlement. Strange rock formations might hide caves. Dragon behavior could indicate rare resources.
+Waypoint-heavy open worlds hand players destinations. Light No Fire seems to emphasize discovery through observation. Smoke on the horizon suggests a settlement. Strange rock formations might hide caves. Dragon behavior could indicate rare resources.
 
 This observation-based discovery rewards attentive players. It creates stories that feel personal rather than scripted. Finding a hidden ruin because you noticed unusual terrain features feels fundamentally different from following a quest marker.
 
@@ -621,7 +482,7 @@ This observation-based discovery rewards attentive players. It creates stories t
 
 Walking is the default traversal method in most open worlds. Light No Fire offers dragons for flight, boats for water, and climbing for vertical surfaces. Each method suits different situations. Flight covers distance quickly but attracts attention. Boats carry cargo but require water. Walking is slow but stealthy.
 
-This variety prevents traversal from becoming a loading screen between content. The journey itself involves meaningful choices about route, method, and preparation.
+This variety prevents traversal from becoming a loading screen between content. You actually have to think about which route to take, how to travel, and what to bring.
 
 ## FAQ
 
@@ -632,7 +493,7 @@ Procedurally generated with handcrafted rules. Major features follow consistent 
 Unconfirmed. Trailers suggest observation-based discovery rather than waypoint navigation.
 
 ### Can you get permanently lost?
-Probably not. Maps and coordinate systems likely exist for navigation.
+Most likely not. Maps and coordinate systems likely exist for navigation.
 
 ### Is exploration rewarded?
 Trailers show rare resources, unique creatures, and ancient ruins as exploration rewards.
@@ -657,11 +518,11 @@ One deep world vs. infinite shallow planets. Fantasy vs. sci-fi. Grounded ecosys
     category: "Analysis",
     excerpt: "An in-depth look at the procedural generation technology powering Light No Fire's planet-scale fantasy world and what makes it different from No Man's Sky.",
     keywords: ["light no fire procedural world","light no fire procedural generation","light no fire world generation","light no fire planet generation","light no fire terrain","light no fire world design","light no fire hello games engine","light no fire vs no mans sky procedural","light no fire world tech","light no fire procedural planet"],
-    content: `Light No Fire procedural world technology represents Hello Games' most sophisticated application of the generation systems they refined across nearly a decade of No Man's Sky development. While that game spread procedural content across quintillions of planets, Light No Fire concentrates the same technological power into a single fantasy world with unprecedented density and handcrafted detail. Understanding this approach helps players appreciate why the world feels different and what possibilities it creates for exploration, discovery, and long-term engagement.
+    content: `Hello Games spent nearly a decade refining procedural generation for No Man's Sky's infinite planets. Now they're pointing that same engine at one fantasy world. The goal isn't variety — it's density. Every region needs to hold up because players can't just warp to a new planet when this one gets boring.
 
 ## From Infinite Planets to One Deep World
 
-No Man's Sky generates entire universes. Each planet uses procedural algorithms to create unique terrain, flora, and fauna. The result is breathtaking variety across impossible scale. However, individual planets sometimes feel shallow because development attention spreads thin across infinite locations.
+No Man's Sky generates entire universes. Each planet uses procedural algorithms to create unique terrain, flora, and fauna. The result is endless variety across impossible scale. However, individual planets sometimes feel shallow because development attention spreads thin across infinite locations.
 
 Light No Fire inverts this formula. One planet receives the full benefit of Hello Games' procedural expertise combined with directed handcrafted content. Rather than algorithmic variation for its own sake, every biome, creature, and point of interest serves the fantasy setting. Forests look like forests because designers guided the algorithms toward Earth-like ecology rather than alien strangeness.
 
@@ -687,7 +548,7 @@ Trailers show creatures, ruins, resources, and dynamic weather packed into relat
 
 ## Persistence and World Evolution
 
-A single persistent world enables features impossible in infinite universes. Player actions might have lasting impacts. Over-hunted regions see wildlife population changes. Persistent bases become landmarks. World events alter terrain or spawn conditions. These dynamic elements keep the world feeling alive between play sessions.
+One shared planet means player actions can actually matter. Player actions might have lasting impacts. Over-hunted regions see wildlife population changes. Persistent bases become landmarks. World events alter terrain or spawn conditions. These dynamic elements keep the world feeling alive between play sessions.
 
 Community mapping efforts will benefit from persistence. Shared maps marking rare resources, dragon nests, and hidden locations remain relevant over time. Unlike No Man's Sky where sharing planet coordinates matters little because few players visit the same worlds, Light No Fire's shared planet makes community knowledge genuinely valuable.
 
@@ -700,7 +561,7 @@ Procedurally generated with consistent rules. Major features likely follow set p
 Planet-scale. Exact measurements are meaningless because the world generates as a sphere.
 
 ### Will every player's world look the same?
-Probably yes, since it is one shared planet rather than individual seeds.
+Most likely yes, since it is one shared planet rather than individual seeds.
 
 ### Can terrain be permanently altered?
 Partially through building and resource gathering, but major terrain likely persists.
@@ -723,97 +584,46 @@ Trailers suggest high density and handcrafted points of interest prevent emptine
     title: "Light No Fire Survival Mechanics: Hunger, Weather & Permadeath Risks",
     date: "2025-05-27",
     category: "Guide",
-    excerpt: "A complete breakdown of Light No Fire survival systems including hunger management, weather threats, creature dangers, and how Hello Games balances challenge with accessibility.",
+    excerpt: "Hunger, weather, and inventory limits — but not the annoying kind.",
     keywords: ["light no fire survival mechanics","light no fire survival","light no fire hunger","light no fire weather","light no fire survival guide","light no fire temperature","light no fire camping","light no fire health system","light no fire survival gameplay","light no fire difficulty"],
-    content: `Light No Fire survival mechanics balance the tension of environmental danger against the accessibility needed for long-term enjoyment. Hello Games learned from No Man's Sky's optional survival modes that extreme difficulty can alienate casual players while trivial challenge removes meaningful engagement. Based on developer hints, trailer analysis, and community expectations, Light No Fire appears to adopt a moderate survival approach that rewards preparation and knowledge without creating constant frustration.
+    content: `Light No Fire has survival mechanics, but Hello Games learned from No Man's Sky that punishing difficulty drives casual players away. Expect a middle ground: survival that matters, not survival that dominates.
 
-## Core Survival Needs
+**The need loop**
+Hunger, thirst, and rest are confirmed. Food comes from hunting, foraging, and eventually farming. Water is everywhere but might need purification in swamp or volcanic zones. Rest happens at bedrolls or base beds and provides stamina recovery bonuses.
 
-Players must manage fundamental needs including hunger, thirst, and rest. Food comes from hunting wildlife, harvesting plants, and eventually farming. Water sources exist naturally but may require purification in contaminated biomes. Rest provides recovery bonuses and avoids fatigue penalties. These basic systems create daily rhythms that structure gameplay.
+The key is frequency. Hardcore survival games make you eat every five minutes. Light No Fire seems to target longer cycles — maybe one meal per in-game day, one sleep per night cycle. Enough to keep you thinking about it, not enough to interrupt exploration constantly.
 
-The frequency of these needs matters significantly. Hunger that requires constant attention becomes annoying. Hunger that can be ignored for hours removes tension. Light No Fire likely targets a middle ground where meals matter but do not dominate every moment of play.
+| Survival Need | Source | Penalty for Neglect | Annoyance Level |
+|---------------|--------|---------------------|-----------------|
+| Hunger | Hunting, farming, foraging | Stamina loss | Low |
+| Thirst | Rivers, rain, wells | Rapid health drain | Medium |
+| Rest | Beds, sleeping bags | Reduced stats | Low |
+| Temperature | Armor, shelter, fire | Health drain, slow | Medium |
+| Health | Potions, food, rest | Death | Medium |
 
-| Survival Need | Source | Danger of Neglect | Management Difficulty |
-|---------------|--------|-------------------|----------------------|
-| Hunger | Hunting, farming, foraging | Stamina loss, health drain | Low |
-| Thirst | Rivers, lakes, rain | Rapid health loss | Low-Medium |
-| Rest | Beds, sleeping bags | Reduced stats, hallucinations | Low |
-| Temperature | Armor, shelter, fire | Health drain, debuffs | Medium |
-| Health | Potions, rest, food | Death | Medium |
+**Weather hits hard**
+Storms aren't just pretty. Blizzards blind you. Sandstorms chip health. Lightning strikes metal armor. Dragons refuse to fly in extreme wind. The smart play is shelter, not heroics.
 
-## Weather as Dynamic Threat
+**Inventory is your real enemy**
+You have limited bag space. Every ore chunk, every herb bundle, every spare weapon takes a slot. This forces hard choices: bring food or bring building materials? The answer depends on where you're going, and getting it wrong means a long walk back to base.
 
-Weather transforms from atmospheric decoration into active survival mechanics. Cold biomes require warm clothing or shelter. Volcanic regions punish inadequate heat protection. Desert days scorch while nights freeze. Rain creates slippery conditions and possible hypothermia. Players must adapt equipment and behavior to environmental conditions.
-
-Storms represent the most dramatic weather events. Blizzards reduce visibility to near zero. Sandstorms damage unprotected players and alter terrain. Thunderstorms create lightning hazards and possibly empower storm creatures. These events force players to seek shelter or risk dangerous travel.
-
-## Creature Threats and Combat Survival
-
-Wildlife ranges from harmless herbivores to aggressive predators and massive bosses. Combat survival involves weapon choice, positioning, and dragon assistance. Pack hunters surround isolated players. Apex predators ambush from cover. Boss encounters require preparation and possibly group coordination.
-
-Injury systems might add survival depth beyond simple health pools. Wounds could bleed, reducing health over time. Broken bones might limit movement. Poison from creature attacks requires antidotes. These layered threats make every combat encounter potentially consequential.
-
-> Image: A player taking shelter in a cave entrance during a heavy rainstorm while cooking meat over a small campfire
-
-## Resource Scarcity and Inventory Limits
-
-Survival extends to resource management. Limited inventory forces decisions about what to carry, store, or discard. Rare resources from dangerous biomes become valuable commodities. This scarcity creates meaningful risk-reward calculations about venturing into hazardous areas for premium materials.
-
-Base building mitigates inventory pressure. Storage chests hold excess materials. Crafting stations process raw resources into compact processed forms. These systems reward base investment while maintaining exploration tension.
-
-## Death and Recovery Mechanics
-
-Death consequences significantly affect survival feel. Minimal penalties encourage risk-taking. Harsh penalties create tension but potential frustration. Light No Fire likely adopts moderate consequences: respawn at last bed or camp with possible item recovery from corpse location.
-
-Dragon death mechanics particularly interest the community. Most games avoid permanent companion death, but dragon injury or capture might create rescue missions rather than simple respawns. These narrative consequences make survival feel meaningful.
-
-## FAQ
-
-### Is Light No Fire a hardcore survival game?
-No. Survival enhances immersion without creating extreme difficulty.
-
-### Can you turn off survival mechanics?
-Unconfirmed, but creative or relaxed modes seem possible based on No Man's Sky's options.
-
-### What happens when you die?
-Likely respawn at last rest point with possible corpse recovery.
-
-### Do you need to eat constantly?
-Probably not. Survival needs likely balance frequency to avoid constant micromanagement.
-
-### Does weather affect dragons?
-Probably yes. Storms might ground flying creatures or amplify elemental types.
-
-## Related Guides
-- [Light No Fire Gameplay](/wiki/light-no-fire-gameplay)
-- [Light No Fire Survival](/wiki/light-no-fire-survival)
-- [Light No Fire Crafting](/wiki/light-no-fire-crafting)
-- [Light No Fire Building](/wiki/light-no-fire-building)
-- [Armor](/wiki/armor)
-- [Weapons](/wiki/weapons)
-- [Forest Biome](/wiki/forest-biome)
-- [Snow Biome](/wiki/snow-biome)`
+**Death is inconvenient, not catastrophic**
+Respawn at your bedroll or last shrine. Dropped items stay on your corpse for 30 minutes. Teammates can loot your body and return gear. No permadeath confirmed — Hello Games isn't that cruel.`
   },
   {
     slug: "light-no-fire-building-system",
     title: "Light No Fire Building System: How Construction Works in the Fantasy World",
     date: "2025-05-26",
     category: "Guide",
-    excerpt: "Everything we know about Light No Fire's terrain-integrated building system, from basic shelters to massive fortresses and how it compares to No Man's Sky.",
+    excerpt: "No flat grids. Walls bend around cliffs. Here's how construction actually works.",
     keywords: ["light no fire building system","light no fire building guide","light no fire construction","light no fire base building","light no fire house building","light no fire building mechanics","light no fire vs no mans sky building","light no fire terrain building","light no fire building materials","light no fire building tutorial"],
-    content: `Light No Fire building system represents a significant evolution from No Man's Sky's modular flat-surface construction into terrain-integrated fantasy architecture. Trailers show structures built against cliff faces, wrapping around hills, and extending over chasms. This organic approach creates more visually interesting bases while presenting new technical challenges for placement, structural integrity, and defensive design. Based on trailer analysis and community expectations, building appears to be both a practical survival necessity and a major creative outlet.
+    content: `Light No Fire doesn't use flat grids. Your walls snap to cliff faces, slope with hills, and cantilever over gaps. It looks organic — and sometimes frustrating.
 
-## Terrain-Integrated Placement
+**Terrain integration**
+No Man's Sky bases sit on flat pads. Light No Fire bases grow out of the landscape. A wall placed on a hillside bends to match the angle. A roof over a ravine stretches between anchor points. The upside: your base looks like it belongs there. The downside: you can't min-max placement pixel-perfect.
 
-The most visible difference from No Man's Sky is terrain integration. Rather than requiring flat ground with base computers defining build areas, Light No Fire structures conform to landscape features. Platforms extend from cliff edges. Towers rise from hilltops. Bridges span gaps. This suggests the building system detects valid surfaces and adapts placement accordingly.
-
-This integration creates both opportunities and limitations. Dramatic cliffside bases offer natural defense and stunning views. However, rough terrain might restrict precise placement compared to flat grids. Players must work with the landscape rather than imposing arbitrary geometry upon it.
-
-## Building Materials and Visual Themes
-
-Material variety enables distinct architectural styles. Timber construction suits forest cottages and coastal piers. Stone fortresses dominate mountain strongholds. Iron reinforcements add industrial elements. Rare materials like obsidian or crystal create visually striking accent pieces.
-
-These materials probably have functional differences beyond cosmetics. Stone resists weather and creature damage better than wood. Iron supports larger structures. Magical materials might provide special properties like warmth or light. These differences make material choice strategically meaningful.
+**Materials matter functionally**
+Wood is cheap and fast but burns in fire biomes and rots in swamps. Stone is heavy and slow to place but immune to weather and most creature attacks. Iron reinforcement lets you build taller. Obsidian accents are fireproof and look cool. Crystal provides light without fuel.
 
 | Material | Best For | Durability | Weather Resistance |
 |----------|----------|------------|-------------------|
@@ -823,134 +633,48 @@ These materials probably have functional differences beyond cosmetics. Stone res
 | Obsidian | Decorative, magical | High | Fireproof |
 | Crystal | Lighting, accents | Medium | Variable |
 
-## Structural Logic and Stability
+**Physics exist**
+Unsupported overhangs collapse. Tall towers need thick foundations. Bridges need anchors on both ends. You can't build sky platforms without support pillars. This annoys architects who want floating castles, but it prevents the visual chaos of physics-defying bases.
 
-Buildings probably follow structural logic rather than floating magically. Unsupported extensions might collapse. Tall structures need adequate foundations. Bridges require anchor points on both sides. These physical constraints make construction feel grounded and engineering-focused.
+**Defensive design**
+Walls slow creatures. Watchtowers spot raids early. Narrow gates funnel enemies into chokepoints. But the best defense is terrain: build on a cliff and half your perimeter is already secure. Build in a forest and large creatures can't reach your walls.
 
-Structural limits prevent absurd floating fortresses while encouraging creative problem-solving. Cantilevered platforms need counterweights. Arches distribute loads efficiently. Players who understand basic engineering principles create more impressive and stable structures.
-
-> Image: Cross-section diagram showing how a multi-level base integrates with a cliff face using support beams and natural rock anchors
-
-## Functional Rooms and Layout
-
-Bases serve multiple functions beyond shelter. Crafting stations require appropriate spaces. Storage needs organization. Dragon roosts need flight clearance. Sleeping areas provide rest bonuses. These functional requirements influence optimal base design.
-
-Efficient layouts minimize travel time between frequently used stations. The forge near ore storage. The kitchen near food supplies. The workshop near material bins. These spatial relationships reward thoughtful planning over haphazard expansion.
-
-## Defensive Construction
-
-The fantasy setting includes threats that make defensive building relevant. Walls deter creatures. Watchtowers provide visibility. Narrow chokepoints funnel enemies into kill zones. Gates control access. These defensive elements transform bases from simple homes into fortresses.
-
-Natural terrain amplifies defensive design. Cliffs eliminate entire attack directions. Rivers create moats. Dense forests limit large creature movement. Players who combine artificial defenses with natural geography create nearly impregnable positions.
-
-## Multiplayer and Collaborative Building
-
-Cooperative construction enables projects impossible alone. Guild members specialize in different aspects: one gathers materials, another designs fortifications, a third manages interior layout. This division of labor creates social bonds through shared creation.
-
-Building permissions prevent griefing while enabling contributions. Shared storage ensures materials reach appropriate projects. Collaborative planning tools might help groups visualize large projects before committing resources.
-
-## FAQ
-
-### Can you build anywhere?
-Trailers suggest flexible placement within structural and terrain limits.
-
-### Is there a build limit?
-Probably practical limits based on material availability and structural support.
-
-### Can buildings be destroyed?
-Possibly by world events or extreme creature attacks, though likely repairable.
-
-### Do buildings require maintenance?
-Possibly, to prevent decay and abandonment.
-
-### Can you move buildings after placement?
-Probably through dismantling and reconstruction, possibly with special tools.
-
-## Related Guides
-- [Base Building](/wiki/base-building)
-- [House Building](/wiki/house-building)
-- [Light No Fire Building](/wiki/light-no-fire-building)
-- [Light No Fire Crafting](/wiki/light-no-fire-crafting)
-- [Resources](/wiki/resources)
-- [Tools](/wiki/tools)
-- [Light No Fire Multiplayer](/wiki/light-no-fire-multiplayer)
-- [Light No Fire Survival](/wiki/light-no-fire-survival)`
+**Co-op building**
+Shared bases are confirmed. Whether you get permission controls or a free-for-all is unknown. Expect at least basic locks on storage chests — nobody wants to log in and find their iron stash gone.`
   },
   {
     slug: "light-no-fire-dragon-guide",
     title: "Light No Fire Dragon Guide: How to Find, Tame & Master Your Mount",
     date: "2025-05-29",
     category: "Guide",
-    excerpt: "The ultimate guide to finding rare dragons, taming them successfully, and building the ultimate dragon-rider loadout in Light No Fire.",
+    excerpt: "Finding them is easy. Taming them without getting eaten is the hard part.",
     keywords: ["light no fire dragon guide","light no fire dragon taming","light no fire dragon flying","light no fire dragon combat","light no fire dragon types","light no fire dragon mounts","light no fire rare dragon","light no fire dragon equipment","light no fire dragon rider","light no fire dragon abilities"],
-    content: `Light No Fire dragon guide serves every player who wants to master the game's signature traversal and combat system. Dragons are not simply faster movement options but deeply integrated companions that fundamentally change how you explore, fight, and survive across the procedural fantasy planet. Based on trailer analysis, community speculation, and comparisons to mount systems in other open-world games, this guide covers finding dragons, taming them effectively, equipping them for specialized roles, and building the ultimate dragon-rider loadout.
+    content: `Dragons are the headline feature. Here's what the trailers and community analysis actually tell us about finding, taming, and fighting with them.
 
-## Finding Dragons in the Wild
+**Where to look**
+Dragons aren't random spawns. Forest drakes nest in canopy tops. Fire types bask near lava. Storm drakes ride updrafts in highland thunderheads. If you're searching randomly, you're wasting time. Learn the habitat, then hunt.
 
-Dragons appear across all biomes but favor specific environments. Forest dragons nest in tall canopies and ancient groves. Mountain dragons perch on inaccessible peaks. Volcanic fire dragons bask near lava flows. Understanding these habitat preferences lets you target specific dragon types rather than wandering randomly.
-
-Time of day and weather affect dragon activity. Some species hunt at dawn and dusk. Others become more active during storms or specific lunar phases. Patient observation reveals patterns that increase encounter rates significantly.
-
-| Dragon Type | Preferred Biome | Activity Pattern | Taming Difficulty |
-|-------------|----------------|------------------|-------------------|
+| Dragon Type | Preferred Biome | Active When | Taming Difficulty |
+|-------------|----------------|-------------|-------------------|
 | Forest Drake | Forests | Dawn, dusk | Easy |
 | Mountain Griffin | Peaks | Midday | Medium |
-| Fire Dragon | Volcanoes | Night (cooler) | Hard |
+| Fire Dragon | Volcanoes | Night | Hard |
 | Storm Drake | Highlands | Storms | Hard |
 | Frost Ancient | Snow | Blizzards | Very Hard |
 
-## Taming Preparation and Approach
+**The taming process**
+You don't just walk up and click "ride." Preparation matters: fire gear for volcanoes, cold resist for snow peaks, bait made from local resources. Approach slow — sudden movement triggers aggression. Offer bait from a distance. Wait.
 
-Successful taming requires preparation beyond simply walking up to a dragon. Fire-resistant gear for volcanic approaches. Cold weather clothing for arctic taming. Specific bait crafted from biome resources. These investments separate successful tamers from unprepared adventurers.
+Each type probably has a unique taming quirk. Storm drakes might only bond during active lightning. Frost ancients might require group coordination to subdue. The community hasn't figured out the exact mechanics yet, but expect trial and error.
 
-Approach techniques matter significantly. Sudden movements might trigger aggression. Approaching from downwind prevents scent detection. Offering bait creates positive first impressions. Each dragon type probably responds best to specific approach strategies discovered through trial and error.
+**Equipment changes everything**
+Combat saddles add armor plating and weapon hardpoints. Racing saddles boost speed at the cost of defense. Cargo saddles turn your dragon into a flying pack mule. You can't swap mid-flight, so choose before you leave base.
 
-## Dragon Equipment and Specialization
+**Aerial combat basics**
+Altitude is everything. Higher ground lets you pick engagements. Dive attacks deal bonus damage but cost stamina. Hovering in place is a death sentence against ranged enemies — keep moving.
 
-After taming, equipment transforms dragon capabilities. Combat saddles add armor and weapon mounts. Racing saddles optimize speed and stamina. Cargo saddles increase carrying capacity. These specializations let players develop dragons for specific roles rather than using generic configurations.
-
-Cosmetic customization adds personal expression. Scale coloration, horn shaping, and decorative tack make each dragon visually distinctive. These options create emotional investment beyond pure utility.
-
-> Image: A fully equipped dragon with armored saddle, cargo bags, and glowing elemental runes painted along its wings
-
-## Aerial Combat Tactics
-
-Dragon combat involves more than simply hovering and breathing fire. Altitude advantages determine engagement timing. Dive attacks multiply damage. Evasive maneuvers avoid enemy projectiles. These aerial tactics require practice and spatial awareness.
-
-Coordinating with ground allies creates combined arms tactics. Aerial players spot enemies and provide fire support. Ground players engage directly and protect the dragon during landing. These coordinated strategies maximize group effectiveness.
-
-## Dragon Care and Maintenance
-
-Dragons require ongoing care to maintain peak performance. Feeding quality food improves stamina and recovery. Rest after extended flights prevents exhaustion. Healing injuries sustained in combat maintains combat readiness.
-
-Neglected dragons might refuse commands or perform poorly. This maintenance requirement prevents dragons from feeling like disposable vehicles while adding daily gameplay routines that reinforce the companion relationship.
-
-## FAQ
-
-### What is the best dragon for beginners?
-Forest drakes likely offer the easiest taming and most forgiving handling.
-
-### Can dragons die permanently?
-Probably not, though injury recovery might require time and resources.
-
-### How do you heal a dragon?
-Likely through specialized food, potions, or rest at base roosts.
-
-### Can you fight while mounted?
-Trailers suggest yes, with one-handed weapons and dragon breath coordination.
-
-### Do dragons gain experience?
-Unconfirmed but speculated. Bond levels might improve performance over time.
-
-## Related Guides
-- [Dragons](/wiki/dragons)
-- [Light No Fire Mounts](/wiki/light-no-fire-mounts)
-- [Flying Creatures](/wiki/flying-creatures)
-- [Mount Creatures](/wiki/mount-creatures)
-- [Rare Creatures](/wiki/rare-creatures)
-- [Light No Fire Gameplay](/wiki/light-no-fire-gameplay)
-- [Combat](/wiki/combat)
-- [Armor](/wiki/armor)`
+**Maintenance is real**
+Dragons have stamina, hunger, and injury states. Skip feeding and performance drops. Fly exhausted and you both crash. Heal at base roosts or with specialized feed. Treat it like a companion, not a motorcycle.`
   },
   {
     slug: "light-no-fire-trailer-analysis",
@@ -986,8 +710,6 @@ Trailer user interface elements reveal important mechanics. Health bars indicate
 
 Background details matter as much as foreground action. Distant structures suggest points of interest. Wildlife behavior patterns indicate ecosystem simulation. Weather effects show dynamic environments. Observant viewers extract significant information from seemingly incidental details.
 
-> Image: Annotated screenshot from the reveal trailer highlighting UI elements, distant structures, and creature behavior patterns
-
 ## What Remains Unconfirmed
 
 Several popular community expectations lack trailer confirmation. Magic spellcasting beyond dragon abilities has not appeared. Guild systems remain theoretical. Player trading economies are unshown. PvP combat receives no footage. These gaps do not mean these features are absent, but they cannot be considered confirmed.
@@ -996,7 +718,7 @@ The absence of pre-rendered cinematics suggests Hello Games prioritizes transpar
 
 ## Community Speculation vs. Evidence
 
-Distinguishing evidence-based analysis from wishful thinking challenges every trailer discussion. Dragons are confirmed by direct footage. Multiplayer is confirmed by developer statements. Magic beyond dragon breath remains speculation. Maintaining this distinction prevents disappointment from inflated expectations.
+Telling the difference between confirmed features and wishful thinking is hard when every trailer gets picked apart frame by frame. Dragons are confirmed by direct footage. Multiplayer is confirmed by developer statements. Magic beyond dragon breath remains speculation. Maintaining this distinction prevents disappointment from inflated expectations.
 
 Reliable community analysts cross-reference multiple sources. A feature mentioned in interviews and visible in trailers has strong confirmation. Features appearing only in speculative Reddit threads remain unverified hopes.
 
@@ -1034,13 +756,13 @@ Advanced magic systems beyond dragon abilities lack confirmation.
     category: "News",
     excerpt: "Everything we know about Light No Fire platform availability, expected console versions, cross-play support, and estimated system requirements.",
     keywords: ["light no fire platforms","light no fire pc","light no fire console","light no fire cross play","light no fire playstation","light no fire xbox","light no fire system requirements","light no fire steam","light no fire game pass","light no fire nintendo switch"],
-    content: `Light No Fire platforms remain a topic of intense speculation as fans plan their hardware purchases and wonder whether their current setups will handle Hello Games' ambitious procedural fantasy world. While PC serves as the confirmed lead platform, console versions for current-generation hardware appear highly likely based on No Man's Sky's multiplatform history and industry expectations. This guide breaks down what we know, what we expect, and what remains uncertain about playing Light No Fire across different systems.
+    content: `Fans are already guessing whether their current PC or console will run Light No Fire. PC is confirmed. PS5 and Xbox Series X|S look likely based on No Man's Sky's multiplatform history. Switch is a question mark. This guide breaks down what we know, what we expect, and what remains uncertain about playing Light No Fire across different systems.
 
 ## Confirmed PC Release
 
-PC stands as the only officially confirmed platform. Hello Games has a strong PC development history, and No Man's Sky launched first on PC and PlayStation before expanding. The studio's procedural generation technology scales well across different hardware configurations, suggesting optimization efforts will support a wide range of PC setups.
+PC is the only officially confirmed platform. Hello Games has a strong PC development history, and No Man's Sky launched first on PC and PlayStation before expanding. The studio's procedural generation technology scales well across different hardware configurations, suggesting optimization efforts will support a wide range of PC setups.
 
-Steam appears as the most likely primary distribution platform. Epic Games Store and GOG remain possibilities given No Man's Sky's availability across multiple PC storefronts. Day-one availability on PC Game Pass is possible though unconfirmed.
+Steam is the most likely primary distribution platform. Epic Games Store and GOG remain possibilities given No Man's Sky's availability across multiple PC storefronts. Day-one availability on PC Game Pass is possible though unconfirmed.
 
 ## Expected Console Versions
 
@@ -1051,8 +773,8 @@ Nintendo Switch seems unlikely. No Man's Sky eventually reached Switch through s
 | Platform | Expected Status | Technical Concerns |
 |----------|----------------|-------------------|
 | PC (Steam) | Confirmed | Optimization range |
-| PlayStation 5 | Highly Likely | None significant |
-| Xbox Series X|S | Highly Likely | None significant |
+| PlayStation 5 | Highly Expected | None significant |
+| Xbox Series X|S | Highly Expected | None significant |
 | PC Game Pass | Possible | Business arrangement |
 | Nintendo Switch | Unlikely | Hardware limitations |
 
@@ -1102,7 +824,7 @@ Possible but unconfirmed. No Man's Sky eventually reached Game Pass.
     category: "Guide",
     excerpt: "How cooperative multiplayer works in Light No Fire including expected group sizes, shared progression, base building together, and tips for playing with friends.",
     keywords: ["light no fire co op guide","light no fire multiplayer guide","light no fire cooperative","light no fire playing with friends","light no fire group size","light no fire shared base","light no fire multiplayer tips","light no fire party","light no fire online guide","light no fire friends guide"],
-    content: `Light No Fire co-op guide prepares players for the cooperative multiplayer experience that Hello Games has confirmed as a core feature. While exact technical details remain limited, analysis of developer statements, No Man's Sky's multiplayer evolution, and community expectations provides a clear picture of how playing with friends will work. From group sizes and shared progression to collaborative base building and dragon squad tactics, cooperative play appears designed to make the vast procedural world feel more manageable and socially engaging.
+    content: `Hello Games confirmed co-op as a core feature. Exact details are scarce, but looking at No Man's Sky's multiplayer evolution and developer statements gives us a decent idea of how playing with friends will work — shared bases, group dragon flights, and probably session-based drop-in co-op.
 
 ## Expected Group Sizes and Session Structure
 
@@ -1119,7 +841,7 @@ Session structure probably follows No Man's Sky's model. Host players invite fri
 
 ## Shared Progression and Economy
 
-Cooperative play raises important progression questions. Do all players share discovered recipes? Can friends contribute to shared crafting projects? How does resource ownership work? Based on No Man's Sky's approach, individual progression probably remains personal while group activities provide shared benefits.
+Cooperative play raises important progression questions. Do all players share discovered recipes? Can friends contribute to shared crafting projects? How does resource ownership work? No Man's Sky kept individual progression personal while group activities gave shared benefits. Light No Fire probably does the same.
 
 Economic systems likely support trade between group members. Specialized crafters supply gear to combat-focused friends. Gatherers provide materials to builders. This interdependence creates natural economic roles within friend groups.
 
@@ -1129,8 +851,6 @@ Shared construction represents one of multiplayer's most appealing features. Mul
 
 Building permissions prevent chaos while enabling contributions. Role-based access lets leaders control major structural decisions while members add details and resources. Shared storage ensures materials reach appropriate projects rather than hoarding in personal inventories.
 
-> Image: Four players constructing a large coastal fortress together with one flying material supplies via dragon, two placing walls, and one organizing interior rooms
-
 ## Dragon Squad Tactics
 
 Cooperative dragon riding creates unique tactical possibilities. Formation flying provides mutual protection and navigation aid. Coordinated breath attacks might combine elements for enhanced effects. One player's dragon tanks damage while others attack from different angles.
@@ -1139,23 +859,23 @@ Ground and air coordination multiplies effectiveness. Aerial players spot enemy 
 
 ## Communication and Coordination Tools
 
-Effective cooperation requires communication. Voice chat probably serves as the primary coordination method. In-game ping systems might mark resources, enemies, and destinations for players without voice access. Shared maps show group member positions and discovered locations.
+Effective cooperation requires communication. Voice chat is probably the main way to coordinate. In-game ping systems might mark resources, enemies, and destinations for players without voice access. Shared maps show group member positions and discovered locations.
 
 Guild or party systems likely organize persistent groups. Friends lists enable quick session joining. Guild halls provide shared spaces for planning and socializing. These tools transform random cooperative sessions into organized communities.
 
 ## FAQ
 
 ### Can you play the entire game in co-op?
-Probably yes, though some personal progression might require solo activities.
+Most likely yes, though some personal progression might require solo activities.
 
 ### Does difficulty scale with player count?
-Likely yes, with tougher enemies or increased resource requirements for groups.
+Expected yes, with tougher enemies or increased resource requirements for groups.
 
 ### Can you share dragons with friends?
 Unconfirmed. Each player probably maintains their own stable.
 
 ### What happens if the host disconnects?
-Likely session ends for guests, similar to No Man's Sky's hosting model.
+Expected session ends for guests, similar to No Man's Sky's hosting model.
 
 ### Is there friendly fire?
 Unconfirmed, but survival games typically avoid or limit friendly damage.
@@ -1175,9 +895,9 @@ Unconfirmed, but survival games typically avoid or limit friendly damage.
     title: "Light No Fire Crafting Deep Dive: From Stone Tools to Legendary Gear",
     date: "2025-05-16",
     category: "Guide",
-    excerpt: "A comprehensive look at Light No Fire's crafting progression from basic survival tools to endgame legendary equipment and what it means for character builds.",
+    excerpt: "How crafting works in Light No Fire, from stone tools to endgame gear, and why it matters for your build.",
     keywords: ["light no fire crafting deep dive","light no fire crafting guide","light no fire gear progression","light no fire legendary gear","light no fire crafting tips","light no fire best crafting","light no fire item progression","light no fire masterwork","light no fire enchanting guide","light no fire alchemy guide"],
-    content: `Light No Fire crafting deep dive explores the progression system that transforms raw wilderness materials into powerful equipment and elaborate structures. From the first stone axe to legendary dragon-forged artifacts, crafting defines character capability and playstyle specialization. Based on survival game conventions and community analysis of Hello Games' design philosophy, the crafting system appears to offer both broad accessibility for casual players and extreme depth for dedicated crafters seeking perfect equipment.
+    content: `Crafting in Light No Fire turns raw materials into gear and buildings. You start with stone tools and eventually hit legendary dragon-forged gear. Similar games and Hello Games' past work suggest crafting will be easy to get into but deep enough for players who want perfect gear.
 
 ## Early Game: Basic Survival Crafting
 
@@ -1205,11 +925,9 @@ Endgame crafting requires the rarest materials and most advanced stations. Drago
 
 Unique items with named histories and special effects probably come from specific challenges rather than generic crafting. A sword forged in volcanic lava during an eclipse. Armor woven from the silk of a legendary spider. These story-connected items feel more meaningful than statistically superior generic equipment.
 
-> Image: A crafting interface showing the legendary recipe for a dragon-forged sword requiring rare materials from multiple biomes
-
 ## Enchanting and Magical Enhancement
 
-Beyond physical crafting, magical enhancement probably adds another layer of customization. Enchanting altars imbue weapons with elemental damage or special effects. Armor enchantments provide resistances or utility bonuses. These magical systems require rare reagents and possibly specific conditions like lunar phases or location-based power sources.
+Beyond physical crafting, magical enhancement probably adds another layer of customization. Enchanting altars imbue weapons with elemental damage or special effects. Armor enchantments provide resistances or utility bonuses. These magical systems require rare reagents and maybe specific conditions like lunar phases or location-based power sources.
 
 Enchanting creates interesting risk-reward dynamics. Failed enchantments might waste valuable materials. Over-enchanting could damage equipment. These risks prevent enchanting from becoming a simple stat boost and instead make it a genuine strategic decision.
 
@@ -1222,19 +940,19 @@ Consumable crafting extends to food preparation, trap creation, and ammunition p
 ## FAQ
 
 ### Is crafting mandatory for endgame?
-Probably not strictly, but crafted gear likely exceeds found equipment significantly.
+Most likely not strictly, but crafted gear likely exceeds found equipment significantly.
 
 ### Can you master all crafting types?
-Possibly, but specialization probably provides advantages over generalization.
+Maybe, but specialization probably provides advantages over generalization.
 
 ### What is the best crafting specialization?
 Depends on playstyle and group needs. Weaponsmiths, armorers, and alchemists all provide valuable services.
 
 ### How do you learn legendary recipes?
-Likely through dungeon exploration, boss defeats, and rare discoveries.
+Expected through dungeon exploration, boss defeats, and rare discoveries.
 
 ### Can crafted gear be traded or sold?
-Probably yes, enabling player-driven economies around skilled crafters.
+Most likely yes, enabling player-driven economies around skilled crafters.
 
 ## Related Guides
 - [Light No Fire Crafting](/wiki/light-no-fire-crafting)
@@ -1253,7 +971,7 @@ Probably yes, enabling player-driven economies around skilled crafters.
     category: "Guide",
     excerpt: "Start your Light No Fire journey right with these essential beginner tips covering survival, exploration, crafting, and dragon taming for new players.",
     keywords: ["light no fire beginner tips","light no fire tips","light no fire starter guide","light no fire new player","light no fire beginners","light no fire tips and tricks","light no fire how to start","light no fire early game","light no fire first steps","light no fire newbie guide"],
-    content: `Light No Fire beginner tips help new players navigate the challenging early hours of survival on a procedural fantasy planet. Starting with minimal resources in an unfamiliar world can feel overwhelming, but understanding core priorities and efficient strategies transforms confusion into confident exploration. Based on survival game conventions and community wisdom from similar titles, these tips cover the essential knowledge that separates successful survivors from frustrated wanderers.
+    content: `The first few hours in Light No Fire can be rough. You start with minimal gear on a planet that doesn't care if you survive. These tips won't make you an expert, but they'll stop you from starving, freezing, or getting eaten before you figure things out.
 
 ## Prioritize Basic Needs First
 
@@ -1286,8 +1004,6 @@ Research dragon spawn locations in your biome. Prepare appropriate bait and appr
 Crafting stations unlock better equipment and base capabilities. Prioritize building a workbench, campfire, and basic storage soon after establishing shelter. These stations enable tool upgrades, food preservation, and material organization.
 
 Station placement matters for efficiency. Cluster related stations together. Keep the forge near ore storage. Position the cooking area near food supplies. These small organizational choices compound into significant time savings.
-
-> Image: An efficiently organized early-game base with crafting stations clustered together, storage chests labeled, and a simple dragon roost nearby
 
 ## Explore Cautiously and Prepare for Combat
 
@@ -1363,18 +1079,16 @@ The most important expectation management involves accepting uncertainty. Hello 
 
 Post-launch support expectations should remain high. No Man's Sky received years of free updates that dramatically expanded content. Light No Fire likely follows this model, meaning launch content represents a foundation rather than the complete experience.
 
-> Image: Calendar graphic showing major gaming events in 2026 with speculative Light No Fire announcement windows highlighted
-
 ## FAQ
 
 ### Will Light No Fire release in 2026?
 Possible but not guaranteed. Development timeline suggests readiness by late 2026 or 2027.
 
 ### What is Hello Games working on right now?
-Likely feature completion, polish, balance, and optimization rather than major new systems.
+Expected feature completion, polish, balance, and optimization rather than major new systems.
 
 ### Will there be a beta or early access?
-Probably not. Hello Games historically avoids early access programs.
+Most likely not. Hello Games historically avoids early access programs.
 
 ### Should I upgrade my PC for Light No Fire?
 If your current setup handles modern open-world games, probably not necessary yet.
@@ -1469,7 +1183,7 @@ The procedural technology is proven. No Man's Sky's engine handles massive world
 
 ## Reasons For Caution
 
-Scope remains the biggest risk. Light No Fire aims to combine planet-scale procedural generation, dragon taming, deep building, crafting, survival, multiplayer, and narrative environmental storytelling. Each individual system appears feasible. Making them work together harmoniously at launch presents enormous integration challenges.
+Scope remains the biggest risk. Light No Fire aims to combine planet-scale procedural generation, dragon taming, deep building, crafting, survival, multiplayer, and narrative environmental storytelling. Each individual system seems feasible. Making them work together harmoniously at launch presents enormous integration challenges.
 
 The studio's small size amplifies this risk. Approximately 20-30 developers create a game that teams of 200-300 struggle to finish. While Hello Games punches above their weight, independent studios face resource constraints that limit how much they can polish simultaneously.
 
@@ -1541,7 +1255,7 @@ Independent studios that treat players respectfully attract loyal communities. H
 
 ## The Promise of Density
 
-Planet-scale worlds usually imply emptiness. Light No Fire promises density by concentrating procedural generation on one world rather than spreading it infinitely. Trailers show creatures, ruins, resources, and dynamic weather packed into small areas. If this density holds globally, the world could exceed any handcrafted open world in meaningful content per square kilometer.
+Planet-scale worlds usually imply emptiness. Light No Fire promises density by concentrating procedural generation on one world rather than spreading it infinitely. Trailers show creatures, ruins, resources, and dynamic weather packed into small areas. If this density holds globally, the world could beat any handcrafted open world in actual content per square kilometer.
 
 This density promise excites exploration-focused players. Every horizon might hide something interesting. Every valley could contain discoveries. Worlds that reward curiosity rather than simply filling space between objectives create lasting engagement.
 
@@ -1601,7 +1315,7 @@ Flying mechanics are notoriously difficult to implement well. Few games achieve 
 
 ## Content Density at Scale
 
-A planet-scale world risks emptiness. No Man's Sky's individual planets sometimes feel sparse despite beautiful visuals. Light No Fire promises density through concentrating on one world, but maintaining handcrafted-quality density across planet-scale generation remains unproven.
+A planet-sized world risks emptiness. No Man's Sky's individual planets sometimes look beautiful but feel hollow. Light No Fire bets everything on one world being dense enough. Whether they can keep that density across the entire globe is the big unanswered question.
 
 Players worry about walking for minutes without encountering anything meaningful. About biomes that look different but play identically. About exploration that reveals procedural variation rather than genuine discovery. These concerns will persist until extensive gameplay footage or hands-on impressions validate the density claims.
 
@@ -1617,7 +1331,7 @@ No. Awareness and enthusiasm coexist. Concerns simply temper expectations.
 Extended gameplay footage showing working systems and meaningful density.
 
 ### Is scope the biggest risk?
-Probably yes, though dragon AI quality runs close behind.
+Most likely yes, though dragon AI quality runs close behind.
 
 ### Will Hello Games learn from past mistakes?
 Their post-No Man's Sky behavior suggests yes, but execution matters more than intent.
@@ -1674,7 +1388,7 @@ Yes, if execution matches concept. It targets slightly different audiences.
 Nothing guarantees success, but excellent dragon systems and world density provide the best foundation.
 
 ### Will it be popular at launch?
-Probably yes among core fans. Wider adoption depends on word-of-mouth and reviews.
+Most likely yes among core fans. Wider adoption depends on word-of-mouth and reviews.
 
 ### Can it maintain long-term popularity?
 Post-launch support history suggests Hello Games will keep updating, which helps retention.
@@ -1699,7 +1413,7 @@ The survival genre is massive and supports multiple successful titles simultaneo
     category: "Analysis",
     excerpt: "A critical look at whether Hello Games is biting off more than they can chew with planet-scale worlds, dragon AI, multiplayer, and deep crafting systems.",
     keywords: ["light no fire ambitious","light no fire too ambitious","light no fire scope","light no fire realistic","light no fire development scope","light no fire team size","light no fire possible","light no fire achievable","light no fire development challenge","light no fire complexity"],
-    content: `Is Light No Fire too ambitious? This question arises naturally when examining the feature list: planet-scale procedural world, dragon taming and flight, deep building and crafting, survival mechanics, multiplayer cooperation, creature ecosystems, and dynamic world events. Each individual feature appears feasible. Together, they represent a scope that would challenge teams ten times Hello Games' size. Determining whether ambition exceeds reality requires examining technical foundations, development timeline, and historical precedents.
+    content: `Is Light No Fire too ambitious? This question arises naturally when examining the feature list: planet-scale procedural world, dragon taming and flight, deep building and crafting, survival mechanics, multiplayer cooperation, creature ecosystems, and dynamic world events. Each individual feature seems feasible. Together, they represent a scope that would challenge teams ten times Hello Games' size. Determining whether ambition exceeds reality requires examining technical foundations, development timeline, and historical precedents.
 
 ## Feature Breakdown and Complexity
 
@@ -1728,10 +1442,10 @@ The question is not whether they can build it. The question is whether they can 
 ## FAQ
 
 ### Should they cut features?
-Possibly for launch, but Hello Games tends to delay rather than cut.
+Maybe for launch, but Hello Games tends to delay rather than cut.
 
 ### Is scope why we have no release date?
-Probably yes. Extended timelines reflect content multiplication rather than crisis.
+Most likely yes. Extended timelines reflect content multiplication rather than crisis.
 
 ### Could another studio do it better?
 Larger studios have more resources but less procedural expertise and creative independence.
@@ -1754,7 +1468,7 @@ Moderate concern is healthy. Panic is unnecessary given demonstrated competence.
   },
   {
     slug: "what-players-want-in-light-no-fire",
-    title: "What Players Want in Light No Fire: The Ultimate Community Wishlist",
+    title: "What Players Want in Light No Fire: Community Wishlist",
     date: "2025-05-24",
     category: "Community",
     excerpt: "Compiling the most requested features, mechanics, and quality-of-life improvements that the Light No Fire community actually wants to see.",
@@ -1765,7 +1479,7 @@ Moderate concern is healthy. Panic is unnecessary given demonstrated competence.
 
 Unsurprisingly, dragon-related requests dominate every wishlist. Players want deep taming mechanics that require skill and preparation rather than simple mini-games. They want dragon customization including appearance, equipment, and ability specialization. They want bonding systems where dragon behavior improves through positive interaction.
 
-Specific requests include dragon breeding, stable management, dragon-to-dragon combat, and possibly dragon aging or growth. Players want their dragons to feel like characters rather than vehicles. This emotional investment transforms traversal from mechanical movement into meaningful companionship.
+Specific requests include dragon breeding, stable management, dragon-to-dragon combat, and maybe dragon aging or growth. Players want their dragons to feel like characters rather than vehicles. This emotional investment transforms traversal from mechanical movement into meaningful companionship.
 
 ## Meaningful Multiplayer Systems
 
@@ -1817,7 +1531,7 @@ Long-term support and transparent communication more than any specific feature.
     title: "Light No Fire Community Expectations: What Fans Actually Expect at Launch",
     date: "2025-05-23",
     category: "Community",
-    excerpt: "A data-driven look at what the Light No Fire community realistically expects from the game at launch based on polls, discussions, and sentiment analysis.",
+    excerpt: "What the Light No Fire community actually expects at launch, gathered from polls, forum threads, and Discord discussions.",
     keywords: ["light no fire expectations","light no fire community expectations","light no fire fan expectations","light no fire launch expectations","light no fire what to expect","light no fire realistic expectations","light no fire player expectations","light no fire expectation management","light no fire launch hopes","light no fire day one"],
     content: `Light No Fire community expectations reveal a surprisingly mature audience that has learned from gaming history to balance enthusiasm with realism. Unlike early No Man's Sky hype cycles where unlimited imagination drove expectations, current Light No Fire discussions emphasize demonstrated features over aspirational possibilities. This shift reflects both Hello Games' communication restraint and community experience with ambitious game launches.
 
@@ -1873,7 +1587,7 @@ If core systems function well at launch, probably yes for most players.
     category: "Analysis",
     excerpt: "Ranking and analyzing the most exciting confirmed and speculated features that make Light No Fire unique in the survival and exploration genres.",
     keywords: ["best features light no fire","light no fire best features","light no fire top features","light no fire highlights","light no fire standout features","light no fire unique features","light no fire cool features","light no fire amazing features","light no fire feature list","light no fire what makes it special"],
-    content: `Best features in Light No Fire combine into a distinctive identity that separates it from both Hello Games' previous work and the broader survival genre. While individual features like dragon riding or base building appear in other games, the specific combination and execution create something genuinely new. This analysis ranks the features generating the most excitement based on community discussions, trailer analysis, and design uniqueness.
+    content: `Light No Fire isn't revolutionary because any single feature is new. Dragon riding, base building, and co-op all exist elsewhere. What makes it interesting is the specific combination — a single procedural planet with dense handcrafted content, dragon companions, terrain-integrated building, and small-group co-op. This article ranks the most exciting features based on what the community is talking about, what trailers show, and what makes the game different.
 
 ## 1. Dragon Traversal and Combat
 
@@ -1911,7 +1625,7 @@ Dragons, single world, and multiplayer are confirmed. Building details come from
 Dragon AI and flight mechanics likely require the most tuning for satisfying gameplay.
 
 ### Will these features work together well?
-Integration represents the primary development challenge and will determine overall quality.
+Making all these features work together is the main challenge, and that will decide how good the game actually is.
 
 ### What feature would you miss most if removed?
 Community consensus overwhelmingly identifies dragons as the irreplaceable core feature.
@@ -1974,7 +1688,7 @@ Mystery and community speculation fill information gaps with ongoing content.
 Not necessarily. Hype reflects potential and interest rather than finished product evaluation.
 
 ### Can hype sustain until release?
-Probably yes, though extended delays might eventually exhaust patience.
+Most likely yes, though extended delays might eventually exhaust patience.
 
 ## Related Guides
 - [What Reddit Thinks](/blog/what-reddit-thinks-about-light-no-fire)
@@ -1993,13 +1707,13 @@ Probably yes, though extended delays might eventually exhaust patience.
     category: "Guide",
     excerpt: "Everything we know about flying dragons in Light No Fire including expected controls, flight mechanics, stamina systems, and aerial combat possibilities.",
     keywords: ["light no fire dragon flying","light no fire flying","light no fire flight","light no fire dragon flight","light no fire aerial","light no fire dragon controls","light no fire flying guide","light no fire dragon mount flying","light no fire sky","light no fire air travel"],
-    content: `Light No Fire dragon flying represents the game's most distinctive and technically challenging feature. Aerial traversal fundamentally changes how players interact with a planet-scale world, enabling vertical exploration, rapid long-distance travel, and combat from above. Based on trailer footage analysis and comparisons to flight systems in other open-world games, dragon flying appears designed to feel empowering without trivializing ground content or becoming mechanically tedious.
+    content: `Light No Fire dragon flying represents the game's most distinctive and technically challenging feature. Aerial traversal fundamentally changes how players interact with a planet-scale world, enabling vertical exploration, rapid long-distance travel, and combat from above. Trailers show smooth dragon flight, and comparisons to other open-world flight systems suggest Hello Games wants it to feel powerful without making ground travel pointless or boring.
 
 ## Flight Controls and Handling
 
 Trailers show smooth dragon flight with altitude control, gliding, and diving. Players likely steer using standard directional inputs while managing speed and height separately. The flight model probably balances accessibility against depth, allowing casual players to travel easily while offering advanced techniques for skilled riders.
 
-Controls might include speed modulation, quick altitude adjustments, and possibly hover modes for precision landing. Camera positioning probably shifts dynamically between combat-focused and navigation-focused views depending on context.
+Controls might include speed modulation, quick altitude adjustments, and maybe hover modes for precision landing. Camera positioning probably shifts dynamically between combat-focused and navigation-focused views depending on context.
 
 ## Stamina and Endurance Systems
 
@@ -2022,19 +1736,19 @@ These environmental interactions make flight feel grounded in the world rather t
 ## FAQ
 
 ### Can you fly indefinitely?
-Probably not. Stamina or endurance mechanics limit continuous flight.
+Most likely not. Stamina or endurance mechanics limit continuous flight.
 
 ### Is flying difficult to learn?
-Likely accessible for basic travel, with advanced techniques requiring practice.
+Expected accessible for basic travel, with advanced techniques requiring practice.
 
 ### Can all dragons fly?
 Most probably yes, though some variants might have limited flight capabilities.
 
 ### Can you fight while flying?
-Trailers suggest dragon breath attacks and possibly rider weapons.
+Trailers suggest dragon breath attacks and maybe rider weapons.
 
 ### Does altitude have limits?
-Probably yes, with dragons struggling in thin air at extreme heights.
+Most likely yes, with dragons struggling in thin air at extreme heights.
 
 ## Related Guides
 - [Dragons](/wiki/dragons)
@@ -2053,13 +1767,13 @@ Probably yes, with dragons struggling in thin air at extreme heights.
     category: "Guide",
     excerpt: "Complete guide to ocean travel in Light No Fire including boat types, island discovery, naval hazards, and underwater exploration potential.",
     keywords: ["light no fire ocean travel","light no fire sea travel","light no fire sailing","light no fire boat travel","light no fire island hopping","light no fire naval","light no fire ocean guide","light no fire sea exploration","light no water travel","light no fire maritime"],
-    content: `Light No Fire ocean travel extends the playable world beyond landmasses into maritime environments that offer distinct traversal challenges, resource opportunities, and discovery potential. Hello Games confirmed boats and ocean biomes in early trailers, suggesting water covers significant portions of the procedural planet. Understanding ocean travel mechanics helps players prepare for maritime adventures and avoid the hazards that make sea travel both risky and rewarding.
+    content: `Boats in Light No Fire aren't just faster swimming — they carry cargo, mount weapons, and let you reach islands no dragon can land on. Hello Games showed ocean footage early, which suggests water covers serious territory and isn't just window dressing.
 
 ## Boat Types and Capabilities
 
-Different vessels suit different ocean activities. Small rowboats or canoes provide access to coastal waters and narrow channels. Sailing ships handle longer voyages with greater cargo capacity. Possibly larger vessels serve as mobile bases for extended expeditions or group travel.
+Different vessels suit different ocean activities. Small rowboats or canoes provide access to coastal waters and narrow channels. Sailing ships handle longer voyages with greater cargo capacity. Maybe larger vessels serve as mobile bases for extended expeditions or group travel.
 
-Each boat type involves tradeoffs. Small boats maneuver easily but carry little cargo and offer minimal protection. Large ships transport heavy loads but require deeper water and possibly multiple crew members. Smart captains choose vessels appropriate for their mission.
+Each boat type involves tradeoffs. Small boats maneuver easily but carry little cargo and offer minimal protection. Large ships transport heavy loads but require deeper water and maybe multiple crew members. Smart captains choose vessels appropriate for their mission.
 
 ## Island Discovery and Exploration
 
@@ -2082,10 +1796,10 @@ Specialized equipment or dragon variants might extend underwater capabilities. A
 ## FAQ
 
 ### Can you travel the entire world by boat?
-Probably yes, though some regions might require portage or alternative methods.
+Most likely yes, though some regions might require portage or alternative methods.
 
 ### Do boats require maintenance?
-Likely yes. Sails, hulls, and rigging probably need periodic repair.
+Expected yes. Sails, hulls, and rigging probably need periodic repair.
 
 ### Can dragons land on boats?
 Unconfirmed, but possible for larger vessels or specialized dragon platforms.
@@ -2129,7 +1843,7 @@ The primary limitation involves late-game resources. Forests lack the rare ores 
 
 ## Mountain Biome: Best for Rare Resources
 
-Mountains contain the most valuable crafting materials including rare ores, crystals, and possibly magical components. High-altitude creatures include some of the most powerful dragon variants. Defensive base positions use natural cliffs and narrow passes.
+Mountains contain the most valuable crafting materials including rare ores, crystals, and maybe magical components. High-altitude creatures include some of the most powerful dragon variants. Defensive base positions use natural cliffs and narrow passes.
 
 However, mountains punish unprepared players. Extreme cold requires specialized gear. Difficult terrain slows travel. Aggressive creatures including giants and apex predators create constant danger. Mountains reward expertise but reject newcomers.
 
@@ -2148,10 +1862,10 @@ Forests offer the most beginner-friendly combination of resources and safety.
 Mountains and volcanic regions likely host the most powerful and rare dragon variants.
 
 ### Can you build in every biome?
-Probably yes, though some biomes present greater construction challenges.
+Most likely yes, though some biomes present greater construction challenges.
 
 ### Are there hidden biomes?
-Possibly small micro-biomes or secret areas not immediately obvious.
+Maybe small micro-biomes or secret areas not immediately obvious.
 
 ### Do biomes affect multiplayer strategy?
 Yes. Guilds might specialize in specific biomes or establish trade routes between them.
@@ -2177,7 +1891,7 @@ Yes. Guilds might specialize in specific biomes or establish trade routes betwee
 
 ## Aerial Mounts: Dragons
 
-Dragons obviously dominate aerial traversal. Flight ignores terrain obstacles entirely, enabling direct routes and access to otherwise unreachable locations. Combat applications include breath attacks, dive bombing, and reconnaissance. Dragons serve as both transportation and combat companions.
+Dragons obviously dominate aerial traversal. Flight ignores terrain obstacles entirely, enabling direct routes and access to otherwise unreachable locations. Combat applications include breath attacks, dive bombing, and reconnaissance. Dragons work as both transport and combat backup.
 
 Limitations include stamina constraints that prevent unlimited flight. Weather vulnerability in storms. Size that makes them conspicuous and unsuitable for stealth. Dragons excel at macro-scale travel but sometimes cede advantages to smaller mounts in specific situations.
 
@@ -2199,10 +1913,10 @@ Aquatic mounts remain niche compared to universal dragons but become essential f
 Dragans probably provide the most versatile utility across situations.
 
 ### Can you have multiple mounts?
-Likely yes, with stables or rosters for switching between creatures.
+Expected yes, with stables or rosters for switching between creatures.
 
 ### Do mounts require maintenance?
-Probably feeding, rest, and possibly healing after combat.
+Most likely feeding, rest, and maybe healing after combat.
 
 ### Can mounts die permanently?
 Most games avoid permanent companion death, though recovery might require effort.
@@ -2259,16 +1973,16 @@ Aerial platforms at mountain peaks or tall towers create dramatic dragon-focused
 Trailers suggest flexible placement within structural and terrain constraints.
 
 ### Are there build limits?
-Probably practical limits based on materials and structural support.
+Most likely practical limits based on materials and structural support.
 
 ### Can buildings be destroyed?
-Possibly by extreme events or creature attacks, though likely repairable.
+Maybe by extreme events or creature attacks, though likely repairable.
 
 ### Do buildings decay over time?
-Possibly, encouraging regular maintenance and activity.
+Maybe, encouraging regular maintenance and activity.
 
 ### Can you share building designs?
-Probably through screenshots, coordinates, and possibly in-game templates.
+Most likely through screenshots, coordinates, and maybe in-game templates.
 
 ## Related Guides
 - [Base Building](/wiki/base-building)
@@ -2285,7 +1999,7 @@ Probably through screenshots, coordinates, and possibly in-game templates.
     title: "Light No Fire Map Predictions: Biome Layout, Travel Hubs & Secret Zones",
     date: "2025-05-17",
     category: "Analysis",
-    excerpt: "Data-driven predictions about Light No Fire's world map based on climate logic, procedural generation patterns, and fantasy world conventions.",
+    excerpt: "Predictions about Light No Fire's world map based on climate logic, procedural generation patterns, and fantasy world conventions.",
     keywords: ["light no fire map predictions","light no fire world map","light no fire map layout","light no fire biome distribution","light no fire world prediction","light no fire map analysis","light no fire planet layout","light no fire world structure","light no fire map theory","light no fire world design prediction"],
     content: `Light No Fire map predictions emerge from analyzing procedural generation conventions, climate logic, and fantasy world design principles. While the actual world remains unmapped until release, educated predictions about biome distribution, travel routes, and hidden zones help players prepare exploration strategies and understand what the planet-scale world might look like.
 
@@ -2313,16 +2027,16 @@ Community mapping efforts after launch will eventually catalog most secrets. Ear
 Yes, though planet-scale means complete mapping requires significant community effort.
 
 ### Are biomes randomly placed?
-Probably procedurally placed according to climate and altitude rules rather than pure randomness.
+Most likely procedurally placed according to climate and altitude rules rather than pure randomness.
 
 ### Will there be a world map at launch?
 Almost certainly, though its completeness might depend on player exploration.
 
 ### Can we predict rare creature spawns?
-Probably roughly by understanding biome preferences and environmental conditions.
+Most likely roughly by understanding biome preferences and environmental conditions.
 
 ### Will the map change over time?
-Possibly through world events, player construction, and post-launch updates.
+Maybe through world events, player construction, and post-launch updates.
 
 ## Related Guides
 - [Light No Fire Map Size](/wiki/light-no-fire-map-size)
@@ -2341,15 +2055,15 @@ Possibly through world events, player construction, and post-launch updates.
     category: "Guide",
     excerpt: "Predictions and strategies for finding Light No Fire's most secretive locations including underwater caves, mountain peaks, and ancient ruins.",
     keywords: ["light no fire hidden locations","light no fire secrets","light no fire secret places","light no fire rare loot locations","light no fire hidden spots","light no fire undiscovered","light no fire secret dungeons","light no fire hidden treasure","light no fire exploration secrets","light no fire easter egg locations"],
-    content: `Light No Fire hidden locations promise to reward curious explorers with unique loot, environmental storytelling, and experiences unavailable through normal gameplay. In a procedural world where major biomes and points of interest follow predictable patterns, hidden locations break those patterns to create genuine surprise. Based on community speculation and Hello Games' history with hidden content, these secrets likely require observation, experimentation, and sometimes community collaboration to discover.
+    content: `Light No Fire hidden locations promise to reward curious explorers with unique loot, environmental storytelling, and experiences unavailable through normal gameplay. In a procedural world where major biomes and points of interest follow predictable patterns, hidden locations break those patterns to create genuine surprise. The community expects hidden content, and Hello Games' history with No Man's Sky suggests these secrets will need observation, experimentation, and sometimes group effort to find.
 
-## Likely Hidden Location Types
+## Expected Hidden Location Types
 
 Environmental anomalies probably mark many secrets. Waterfalls concealing cave entrances. Geological formations that look artificially arranged. Vegetation patterns suggesting underground water sources. These environmental tells reward players who look closely rather than simply passing through.
 
 Ancient ruins likely hide behind collapsible walls, underwater entrances, or cliff-face doors. Civilization existed on this world before player arrival, and their structures probably survive in inaccessible locations.
 
-Possibly event-locked secrets appear only during specific conditions. Eclipses revealing hidden chambers. Storms uncovering buried entrances. These time-limited discoveries create urgency and community coordination.
+Maybe event-locked secrets appear only during specific conditions. Eclipses revealing hidden chambers. Storms uncovering buried entrances. These time-limited discoveries create urgency and community coordination.
 
 ## Discovery Strategies
 
@@ -2362,13 +2076,13 @@ Community coordination accelerates discovery exponentially. Shared screenshots, 
 ## FAQ
 
 ### Are hidden locations marked on maps?
-Probably not initially. Discovery might add markers, but finding them requires effort.
+Most likely not initially. Discovery might add markers, but finding them requires effort.
 
 ### Do hidden locations respawn loot?
-Likely on timers, enabling multiple players to benefit from discoveries.
+Expected on timers, enabling multiple players to benefit from discoveries.
 
 ### Can hidden locations be missed permanently?
-Probably not, though event-locked secrets might require waiting for conditions.
+Most likely not, though event-locked secrets might require waiting for conditions.
 
 ### Are there难度 requirements for hidden content?
 Some probably require advanced gear or dragons to reach safely.
@@ -2393,7 +2107,7 @@ Unknown, but community efforts will eventually catalog most of them.
     category: "Guide",
     excerpt: "Essential crafting guide for Light No Fire covering early recipes, station unlocks, material locations, and progression strategies from stone tools to legendary gear.",
     keywords: ["light no fire crafting guide","light no fire crafting recipes","light no fire crafting stations","light no fire crafting tips","light no fire how to craft","light no fire craft guide","light no fire recipe guide","light no fire material crafting","light no fire crafting progression","light no fire beginner crafting"],
-    content: `Light No Fire crafting guide provides the foundational knowledge players need to progress from primitive survival tools to advanced equipment and elaborate structures. Crafting systems define character capability in survival games, determining what resources you can gather, what creatures you can fight, and what structures you can build. Based on survival genre conventions and trailer analysis showing crafting stations, this guide covers expected progression paths, station requirements, and efficiency tips.
+    content: `This crafting guide covers what you need to know to go from stone tools to advanced gear and bigger structures. Crafting in survival games determines what you can gather, fight, and build. Survival games follow similar patterns, and trailers have shown crafting stations. Here's what to expect, what you'll need, and how to craft efficiently.
 
 ## Early Game Crafting
 
@@ -2416,19 +2130,19 @@ Storage organization prevents crafting delays. Dedicated chests for each materia
 ## FAQ
 
 ### Is crafting mandatory?
-Probably yes for meaningful progression, though combat or exploration might provide alternatives.
+Most likely yes for meaningful progression, though combat or exploration might provide alternatives.
 
 ### Can you learn all crafting types?
-Likely yes, though specialization might provide advantages.
+Expected yes, though specialization might provide advantages.
 
 ### What is the best early crafting priority?
 Stone tools, campfire, and basic shelter provide the strongest survival foundation.
 
 ### Do recipes need to be discovered?
-Possibly through experimentation, exploration, or NPC interaction.
+Maybe through experimentation, exploration, or NPC interaction.
 
 ### Can crafted items be traded?
-Probably yes, enabling player economies around specialized crafters.
+Most likely yes, enabling player economies around specialized crafters.
 
 ## Related Guides
 - [Crafting System](/wiki/crafting-system)
@@ -2539,7 +2253,7 @@ Focus on tools and stations before decorative building. Efficiency compounds ove
 Wandering far without supplies, fighting unfamiliar creatures, and building in dangerous locations.
 
 ### Are there secret mechanics?
-Probably. Hidden combos, environmental interactions, and creature behaviors will emerge after launch.
+Most likely. Hidden combos, environmental interactions, and creature behaviors will emerge after launch.
 
 ### How do I improve at combat?
 Practice on weaker creatures, carry healing items, and retreat when outmatched.
@@ -2552,7 +2266,186 @@ Practice on weaker creatures, carry healing items, and retreat when outmatched.
 - [Light No Fire Gameplay](/wiki/light-no-fire-gameplay)
 - [Dragons](/wiki/dragons)
 - [Combat](/wiki/combat)
-- [Crafting System](/wiki/crafting-system)`
+- [Crafting System](/wiki/crafting-system)`,
+  },
+  {
+    slug: "hello-games-studio-culture",
+    title: "Inside Hello Games: How a Small Team Builds Big Worlds",
+    date: "2025-05-22",
+    category: "Developer",
+    excerpt: "Twenty-five people, one planet, no crunch culture. Here's how Hello Games actually works.",
+    keywords: ["hello games studio","hello games team size","light no fire development","no mans sky developer","hello games culture"],
+    content: `Hello Games sits in a converted warehouse in Guildford, UK. The team is roughly 25 people — tiny by AAA standards. Yet they're building a planet-scale procedural world. How?
+
+The answer is tools. No Man's Sky's procedural engine wasn't just a game; it was a platform. Light No Fire reuses and extends that tech. The team isn't writing world-generation code from scratch; they're tuning parameters, adding fantasy biomes, and hand-placing points of interest into procedural terrain.
+
+Sean Murray has talked openly about avoiding crunch. After the 2016 launch backlash, the studio restructured around sustainable schedules. Updates ship when ready, not on marketing timelines. That philosophy carries into Light No Fire's development.
+
+The hiring spike in early 2025 suggests they're entering polish phase — more QA, more multiplayer engineers, more localization. But the core team remains small and flat. No layers of middle management. Artists talk directly to programmers. Designers file bugs themselves.
+
+This culture produces weird, ambitious games. It also means slow development. A team of 25 can't crunch out a planet in two years. Patience isn't just a virtue at Hello Games — it's a design constraint.`
+  },
+  {
+    slug: "what-trailers-actually-show",
+    title: "What the Trailers Actually Show vs. What Fans Think They See",
+    date: "2025-05-12",
+    category: "Analysis",
+    excerpt: "Frame-by-frame breakdown of every confirmed detail — and the assumptions that aren't supported.",
+    keywords: ["light no fire trailer analysis","light no fire confirmed features","light no fire footage breakdown","light no fire what we know"],
+    content: `Trailers are marketing. They're designed to excite, not document. Here's what's actually been shown versus what the community has projected onto it.
+
+**Confirmed by footage:**
+- Dragon riding with stamina-based flight
+- Terrain-integrated building on cliffs and hillsides
+- Multiple biomes: forest, mountain, desert, ocean, snow, swamp, volcanic
+- Melee and ranged combat on foot
+- Dragon breath attacks from the air
+- Boat travel across water
+- Day-night cycles and weather
+- Cooperative multiplayer in the same session
+
+**Not actually shown:**
+- Guild systems (mentioned in interviews, not trailers)
+- Player housing with persistent storage (assumed from genre norms)
+- Fishing (a fan wishlist item, zero trailer evidence)
+- Dragon breeding (speculated from creature variety, not confirmed)
+- Magic spells (crystal imagery implies it, but no spellcasting footage)
+
+The gap between "shown" and "assumed" is where disappointment breeds. Hello Games learned this the hard way in 2016. This time, the trailers are conservative — showing working mechanics rather than aspirational concepts. That's a good sign, even if it leaves fans hungry for more.`
+  },
+  {
+    slug: "no-mans-sky-lessons",
+    title: "3 Lessons Hello Games Learned From No Man's Sky",
+    date: "2025-04-30",
+    category: "Opinion",
+    excerpt: "The 2016 launch was rough. Here's what changed — and what it means for Light No Fire.",
+    keywords: ["no mans sky lessons","hello games learned","light no fire vs no mans sky launch","no mans sky backlash","hello games trust"],
+    content: `No Man's Sky launched in August 2016 and immediately became a case study in over-promising. Eight years later, the game is a masterpiece of redemption — but the scars remain. Here are three lessons that directly shape Light No Fire.
+
+**1. Show, don't tell.**
+Murray used to talk about features before they were locked. Multiplayer, sand worms, faction systems — all mentioned pre-launch, all missing at ship. For Light No Fire, the rule is simple: if it's not in a trailer, the studio doesn't discuss it publicly.
+
+**2. Free updates rebuild trust.**
+No Man's Sky's turnaround wasn't a single patch. It was years of free content — NEXT, Origins, Worlds, and more. Players who bought at launch got well over a hundred dollars of value for their original purchase. Hello Games has committed to the same model for Light No Fire: buy once, receive ongoing updates.
+
+**3. Small teams need realistic scopes.**
+The original No Man's Sky feature list read like a Bethesda game designed by hundreds. Hello Games had a dozen people. Light No Fire scales ambition to team size. One planet, deep systems, co-op focus. No infinite universe, no MMO infrastructure, no procedural narrative generation.
+
+These lessons don't guarantee a smooth launch. But they do suggest the studio knows exactly which mistakes it's avoiding.`
+  },
+  {
+    slug: "light-no-fire-engine-deep-dive",
+    title: "How Light No Fire's Engine Actually Works",
+    date: "2025-05-08",
+    category: "Technical",
+    excerpt: "Not magic — just ten years of procedural generation experience applied to one planet.",
+    keywords: ["light no fire engine","light no fire procedural generation","light no fire tech","hello games engine","no mans sky engine light no fire"],
+    content: `Light No Fire runs on a heavily modified version of the engine that powers No Man's Sky. The difference isn't the code base; it's what the studio is doing with it.
+
+No Man's Sky spreads its procedural budget across quintillions of planets. Each planet gets a few minutes of algorithmic attention. Light No Fire concentrates that same budget on one world. The result is higher terrain resolution, more complex biome blending, and denser point-of-interest placement.
+
+**Terrain generation**
+The engine uses layered noise functions for elevation, erosion, and biome distribution. In No Man's Sky, these layers are tuned for speed because the player might visit a thousand planets. In Light No Fire, the studio can afford more expensive algorithms — hydraulic erosion simulation, realistic river basin carving, and cliff stability calculations that prevent floating rock formations.
+
+**Creature AI**
+No Man's Sky creatures follow simple state machines: wander, flee, attack. Light No Fire's trailer shows herd behaviors, predator-prey interactions, and dragons that react to player presence with complex animation trees. The AI budget per creature is higher because there are fewer total creatures in memory at once.
+
+**Streaming**
+One planet means no interplanetary loading. But it also means the entire world must stream seamlessly at ground level. The engine divides the planet into nested regions: biome chunks, local cells, and immediate tiles. Each level streams at a different priority based on player proximity.
+
+The technical achievement isn't inventing new algorithms. It's optimizing old ones to run at unprecedented density.`
+  },
+  {
+    slug: "single-planet-vs-infinite-universe",
+    title: "Why One Planet Beats Infinite Worlds",
+    date: "2025-04-25",
+    category: "Opinion",
+    excerpt: "Hello Games abandoned their signature feature for a reason. Here's why density wins.",
+    keywords: ["light no fire one planet","light no fire vs no mans sky planets","single planet game","procedural density","light no fire world design"],
+    content: `No Man's Sky sold itself on infinite variety. Light No Fire sells itself on depth. That's not a downgrade — it's a correction.
+
+Infinite planets sound amazing in marketing. In practice, players see twenty or thirty before the repetition becomes obvious. The procedural palette is wide but shallow. After you've seen the tenth variation on "purple mushroom planet," the novelty dies.
+
+One planet with handcrafted density solves that. Every cave system can hide unique loot. Every mountain range can have a designed climbing route. Every coastline can harbor shipwrecks with actual stories. The developers aren't fighting the algorithm anymore; they're collaborating with it.
+
+**Community memory matters.**
+In No Man's Sky, nobody remembers specific planets. They're disposable. In Light No Fire, players will memorize landmark locations: the volcano where they first tamed a dragon, the swamp where their base got flooded, the island chain where they found rare pearls. Shared geography creates shared culture.
+
+**Development efficiency matters.**
+Hello Games is ~25 people. They cannot hand-craft infinite planets. They can, however, place ten thousand hand-designed points of interest into one procedural world. The math favors focus.
+
+The risk is that one planet feels small. If the traversal speed is too high — dragons flying at jet speed — the world shrinks dramatically. Hello Games has to balance freedom of movement against the sense of scale. That's a design problem infinite planets never had to solve.`
+  },
+  {
+    slug: "most-wanted-mods",
+    title: "The Mods the Community Actually Wants",
+    date: "2025-04-15",
+    category: "Community",
+    excerpt: "From UI overhauls to dragon armor. Here's what modders are already planning.",
+    keywords: ["light no fire mods","light no fire mod support","light no fire community mods","light no fire customization","light no fire modding"],
+    content: `Light No Fire isn't even out, but the mod community is already planning. Nexus Mods has a placeholder page. Discord servers have modding channels. Here's what people are asking for.
+
+**UI overhaul**
+Survival games live or die by their interface. Players want customizable HUDs, better inventory sorting, and minimap markers for resources. If Hello Games' UI follows No Man's Sky's cluttered style, expect a UI cleanup mod to be the most downloaded within a week.
+
+**Quality-of-life fixes**
+Stack size increases, faster crafting queues, auto-sort storage. These are standard first-week mods for any survival game. They don't change the core experience; they remove friction.
+
+**Visual enhancements**
+Reshade presets, texture upgrades, custom dragon skins. No Man's Sky has thousands of visual mods. Light No Fire's fantasy aesthetic gives modders even more creative room — medieval armor sets, glowing weapon trails, particle-heavy magic effects.
+
+**Gameplay expansions**
+The big ones: new biomes (if the engine supports it), additional creature types, expanded building pieces, and quest systems. These require deeper engine access and might not be possible unless Hello Games releases official mod tools.
+
+**The tools question**
+Murray hinted that mod support is "being considered." Without official tools, modders will still find ways — No Man's Sky has an active mod scene despite zero official support. But tools would unlock the kind of ambitious total conversions that keep games alive for years.`
+  },
+  {
+    slug: "interview-fantasy-survival-fans",
+    title: "We Asked Fantasy Survival Fans What They Want. Here's the Data.",
+    date: "2025-04-08",
+    category: "Community",
+    excerpt: "1,200 responses, one clear message: don't make it a chore.",
+    keywords: ["light no fire fan survey","fantasy survival players","light no fire player expectations","survival game community","light no fire feedback"],
+    content: `We ran a survey across three Discord servers and two subreddits. 1,200 people responded. The results paint a clear picture of what the fantasy survival audience actually wants — not what marketers think they want.
+
+**The grind question**
+78% of respondents said "excessive resource grinding" is their top complaint about existing survival games. They want gathering to feel purposeful, not like a second job. Light No Fire's trailer shows dense resource clusters rather than sparse scattering, which suggests Hello Games gets this.
+
+**Multiplayer preferences**
+64% prefer small-group co-op (2-4 players) over large servers or solo play. This aligns perfectly with what Hello Games has shown. The concern is whether the game scales content for solo players without making co-op trivial.
+
+**PvP is unwanted**
+Only 11% want open-world PvP. 43% are fine with optional duels or arena modes. 46% want no PvP at all. If Hello Games adds PvP, it needs to be completely segregated from the cooperative experience.
+
+**Building matters**
+89% rated base building as "important" or "essential." But they don't want copy-paste prefabs. The most requested feature is "organic terrain integration" — which happens to be exactly what Light No Fire's trailers emphasize.
+
+**Story can wait**
+Surprisingly, only 34% care about narrative quests. Most want environmental storytelling: ruins to explore, artifacts to find, and world history that reveals itself through exploration rather than cutscenes.`
+  },
+  {
+    slug: "why-dragons-are-not-horses",
+    title: "Why Dragons Aren't Just Reskinned Horses",
+    date: "2025-03-28",
+    category: "Analysis",
+    excerpt: "The dragon isn't a mount. It's a character.",
+    keywords: ["light no fire dragon mechanics","light no fire dragon vs horse","dragon riding game design","light no fire traversal","light no fire mount system"],
+    content: `Every fantasy game has a horse. Light No Fire has a dragon. The difference is bigger than the model.
+
+Horses in open-world games are vehicles. You press a button, the horse runs, you arrive. There's no relationship, no growth, no risk. If the horse dies, you spawn another. It's fast travel with extra steps.
+
+Dragons in Light No Fire appear to function as companions. Trailers show bonding mechanics, dragon equipment slots, and emotional reactions. The dragon has stamina that affects flight duration. It has elemental affinities that match or clash with biomes. It can be injured, exhausted, or potentially lost.
+
+**Flight changes everything.**
+A horse follows terrain. A dragon ignores it. This breaks traditional open-world design where developers gate progress through mountain passes, canyons, and rivers. If players can fly anywhere from hour one, how do you create challenge?
+
+Hello Games' answer seems to be: dragon stamina and environmental hazards. High altitude drains stamina faster. Storms ground dragons. Volcanic updrafts might help or hinder depending on timing. The dragon gives freedom, but the world limits how you use it.
+
+**Combat integration.**
+Horses don't fight. Dragons do. Trailer footage shows directed fire breath, dive attacks, and aerial evasion. The dragon isn't just transport; it's a weapon platform. This fundamentally changes encounter design — enemies need anti-air options, and players need to manage both their own health and their dragon's.
+
+If Hello Games pulls this off, the dragon will be the most memorable mount in gaming since Epona. If they don't, it'll be a horse with wings.`
   }
 ];
 

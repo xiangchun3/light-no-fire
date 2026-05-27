@@ -7,7 +7,8 @@ import { wikiArticles } from "@/lib/wiki-data";
 
 export const metadata = {
   title: "Wiki",
-  description: "Comprehensive guides and references for everything in Light No Fire.",
+  description: "Guides and references for everything in Light No Fire.",
+  alternates: { canonical: "/wiki/" },
 };
 
 export default function WikiPage() {
@@ -21,7 +22,7 @@ export default function WikiPage() {
           <div className="container mx-auto px-4 py-16">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">Wiki</h1>
             <p className="text-muted-foreground max-w-2xl">
-              Comprehensive guides and references for everything in Light No Fire.
+              Guides and references for everything in Light No Fire.
             </p>
           </div>
         </section>

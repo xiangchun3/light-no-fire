@@ -17,6 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       ? post.excerpt
       : "Latest news, guides, and comparisons for Light No Fire.",
     keywords: post?.keywords,
+    alternates: { canonical: `/blog/${slug}/` },
   };
 }
 

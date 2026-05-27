@@ -9,8 +9,14 @@ export function generateStaticParams() {
   return creatures.map((c) => ({ slug: c.slug }));
 }
 
-export function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
-  return { title: "Creature" };
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const creature = creatures.find((c) => c.slug === slug);
+  return {
+    title: creature ? creature.name : "Creature",
+    description: creature ? creature.description : "Browse Light No Fire creatures.",
+    alternates: { canonical: `/creatures/${slug}/` },
+  };
 }
 
 export default async function CreatureDetailPage({ params }: { params: Promise<{ slug: string }> }) {

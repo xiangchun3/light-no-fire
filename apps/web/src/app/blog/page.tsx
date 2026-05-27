@@ -7,6 +7,7 @@ import { blogPosts } from "@/lib/blog-data";
 export const metadata = {
   title: "Blog",
   description: "Latest news, guides, and deep dives into Light No Fire.",
+  alternates: { canonical: "/blog/" },
 };
 
 export default function BlogPage() {
