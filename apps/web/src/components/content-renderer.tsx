@@ -11,7 +11,7 @@ function parseInline(text: string): ReactNode {
     const linkMatch = part.match(/\[(.*?)\]\((.*?)\)/);
     if (linkMatch) {
       return (
-        <Link key={i} href={linkMatch[2]} className="text-primary hover:underline">
+        <Link key={i} href={linkMatch[2]} className="text-primary hover:underline font-medium">
           {linkMatch[1]}
         </Link>
       );
@@ -36,12 +36,12 @@ function MarkdownTable({ lines }: { lines: string[] }) {
   if (!header) return null;
 
   return (
-    <div className="overflow-x-auto my-6">
+    <div className="overflow-x-auto my-8">
       <table className="w-full text-sm border-collapse">
         <thead>
-          <tr className="border-b border-border">
+          <tr className="border-b-2 border-border">
             {header.map((h, i) => (
-              <th key={i} className="text-left px-3 py-2 font-semibold text-foreground">
+              <th key={i} className="text-left px-3 py-2.5 font-semibold text-foreground">
                 {parseInline(h)}
               </th>
             ))}
@@ -49,9 +49,9 @@ function MarkdownTable({ lines }: { lines: string[] }) {
         </thead>
         <tbody>
           {body.map((row, ri) => (
-            <tr key={ri} className="border-b border-border/50">
+            <tr key={ri} className="border-b border-border/40">
               {row.map((cell, ci) => (
-                <td key={ci} className="px-3 py-2 text-muted-foreground">
+                <td key={ci} className="px-3 py-2.5 text-muted-foreground">
                   {parseInline(cell)}
                 </td>
               ))}
@@ -65,15 +65,31 @@ function MarkdownTable({ lines }: { lines: string[] }) {
 
 function FaqBlock({ question, answer }: { question: string; answer: string }) {
   return (
-    <details className="group border border-border rounded-lg my-3 bg-card/30">
-      <summary className="flex cursor-pointer items-center justify-between p-4 font-semibold text-foreground hover:bg-card/50 transition-colors">
-        {question}
-        <span className="ml-2 text-muted-foreground group-open:rotate-180 transition-transform">▼</span>
+    <details className="group border-b border-border my-0">
+      <summary className="flex cursor-pointer items-center justify-between py-4 font-semibold text-foreground hover:text-primary transition-colors list-none">
+        <span>{question}</span>
+        <span className="ml-3 text-muted-foreground text-xs group-open:rotate-180 transition-transform shrink-0">▼</span>
       </summary>
-      <div className="px-4 pb-4 text-muted-foreground leading-relaxed">
+      <div className="pb-4 text-muted-foreground leading-relaxed">
         {parseInline(answer)}
       </div>
     </details>
+  );
+}
+
+function InfoBlock({ text, type }: { text: string; type: "info" | "tip" | "warning" }) {
+  const styles = {
+    info: "bg-blue-50/50 border-blue-200 text-blue-900 dark:bg-blue-950/20 dark:border-blue-800 dark:text-blue-100",
+    tip: "bg-amber-50/50 border-amber-200 text-amber-900 dark:bg-amber-950/20 dark:border-amber-800 dark:text-amber-100",
+    warning: "bg-red-50/50 border-red-200 text-red-900 dark:bg-red-950/20 dark:border-red-800 dark:text-red-100",
+  };
+  const labels = { info: "Info", tip: "Tip", warning: "Warning" };
+
+  return (
+    <div className={`my-6 p-4 border-l-4 rounded-r-md ${styles[type]}`}>
+      <div className="text-xs font-bold uppercase tracking-wider mb-1 opacity-80">{labels[type]}</div>
+      <div className="text-sm leading-relaxed">{parseInline(text)}</div>
+    </div>
   );
 }
 
@@ -147,11 +163,40 @@ export function ContentRenderer({ content }: { content: string }) {
       flushFaqSection();
     }
 
+    // Info blocks: > [!INFO], > [!TIP], > [!WARNING]
+    if (line.startsWith("> ")) {
+      const text = line.replace("> ", "").trim();
+      if (text.toLowerCase().startsWith("[!info]")) {
+        elements.push(<InfoBlock key={i} text={text.replace(/\[!INFO\]/i, "").trim()} type="info" />);
+        i++;
+        continue;
+      }
+      if (text.toLowerCase().startsWith("[!tip]")) {
+        elements.push(<InfoBlock key={i} text={text.replace(/\[!TIP\]/i, "").trim()} type="tip" />);
+        i++;
+        continue;
+      }
+      if (text.toLowerCase().startsWith("[!warning]")) {
+        elements.push(<InfoBlock key={i} text={text.replace(/\[!WARNING\]/i, "").trim()} type="warning" />);
+        i++;
+        continue;
+      }
+      if (text.toLowerCase().startsWith("image:")) {
+        elements.push(
+          <div key={i} className="my-6 p-4 border border-dashed border-border rounded-lg bg-muted/20 text-sm text-muted-foreground">
+            <span className="font-semibold text-foreground">Image Suggestion:</span> {text.replace(/image:/i, "").trim()}
+          </div>
+        );
+        i++;
+        continue;
+      }
+    }
+
     if (line.startsWith("### ")) {
       const text = line.replace("### ", "").trim();
       const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
       elements.push(
-        <h3 key={i} id={id} className="text-lg font-semibold mt-6 mb-3 text-foreground scroll-mt-24">
+        <h3 key={i} id={id} className="text-xl font-semibold mt-10 mb-4 text-foreground scroll-mt-28">
           {parseInline(text)}
         </h3>
       );
@@ -161,13 +206,13 @@ export function ContentRenderer({ content }: { content: string }) {
       if (heading.toLowerCase().includes("faq")) {
         inFaq = true;
         elements.push(
-          <h2 key={i} id={id} className="text-xl font-semibold mt-8 mb-3 text-foreground scroll-mt-24">
+          <h2 key={i} id={id} className="text-2xl font-bold mt-14 mb-6 text-foreground scroll-mt-28 border-b border-border pb-2">
             {parseInline(heading)}
           </h2>
         );
       } else {
         elements.push(
-          <h2 key={i} id={id} className="text-xl font-semibold mt-8 mb-3 text-foreground scroll-mt-24">
+          <h2 key={i} id={id} className="text-2xl font-bold mt-14 mb-6 text-foreground scroll-mt-28 border-b border-border pb-2">
             {parseInline(heading)}
           </h2>
         );
@@ -176,42 +221,34 @@ export function ContentRenderer({ content }: { content: string }) {
       const text = line.replace("# ", "").trim();
       const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
       elements.push(
-        <h1 key={i} id={id} className="text-2xl font-bold mt-8 mb-4 text-foreground scroll-mt-24">
+        <h1 key={i} id={id} className="text-3xl font-bold mt-10 mb-6 text-foreground scroll-mt-28">
           {parseInline(text)}
         </h1>
       );
     } else if (line.startsWith("- ")) {
       elements.push(
-        <li key={i} className="ml-5 text-muted-foreground leading-relaxed list-disc">
+        <li key={i} className="ml-5 text-foreground/90 leading-relaxed list-disc mb-1.5">
           {parseInline(line.replace("- ", ""))}
         </li>
       );
     } else if (line.match(/^\d+\.\s/)) {
       elements.push(
-        <li key={i} className="ml-5 text-muted-foreground leading-relaxed list-decimal">
+        <li key={i} className="ml-5 text-foreground/90 leading-relaxed list-decimal mb-1.5">
           {parseInline(line.replace(/^\d+\.\s/, ""))}
         </li>
       );
     } else if (line.trim() === "") {
-      elements.push(<div key={i} className="h-2" />);
+      elements.push(<div key={i} className="h-3" />);
     } else if (line.startsWith("> ")) {
       const text = line.replace("> ", "").trim();
-      if (text.toLowerCase().startsWith("image:")) {
-        elements.push(
-          <div key={i} className="my-4 p-4 border border-dashed border-border rounded-lg bg-muted/30 text-sm text-muted-foreground">
-            <span className="font-semibold text-foreground">Image Suggestion:</span> {text.replace(/image:/i, "").trim()}
-          </div>
-        );
-      } else {
-        elements.push(
-          <blockquote key={i} className="border-l-2 border-primary pl-4 my-4 italic text-muted-foreground">
-            {parseInline(text)}
-          </blockquote>
-        );
-      }
+      elements.push(
+        <blockquote key={i} className="border-l-4 border-primary/40 pl-5 my-6 italic text-muted-foreground leading-relaxed">
+          {parseInline(text)}
+        </blockquote>
+      );
     } else {
       elements.push(
-        <p key={i} className="text-muted-foreground leading-relaxed">
+        <p key={i} className="text-foreground/85 leading-[1.75] mb-4">
           {parseInline(line)}
         </p>
       );
@@ -223,5 +260,5 @@ export function ContentRenderer({ content }: { content: string }) {
   flushFaq();
   flushFaqSection();
 
-  return <div className="space-y-1">{elements}</div>;
+  return <div>{elements}</div>;
 }

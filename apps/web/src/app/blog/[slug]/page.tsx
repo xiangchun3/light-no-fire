@@ -1,7 +1,5 @@
 import { notFound } from "next/navigation";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-import { ContentRenderer } from "@/components/content-renderer";
+import { ArticleLayout } from "@/components/article-layout";
 import { getBlogBySlug, getBlogSlugs } from "@/lib/blog-data";
 
 export function generateStaticParams() {
@@ -27,17 +25,12 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
   if (!post) return notFound();
 
   return (
-    <>
-      <Navbar />
-      <main className="flex-1">
-        <article className="container mx-auto px-4 py-12 max-w-3xl">
-          <div className="text-xs font-medium text-primary mb-2">{post.category}</div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">{post.title}</h1>
-          <p className="text-sm text-muted-foreground mb-8">{post.date}</p>
-          <ContentRenderer content={post.content} />
-        </article>
-      </main>
-      <Footer />
-    </>
+    <ArticleLayout
+      title={post.title}
+      category={post.category}
+      date={post.date}
+      content={post.content}
+      backLink={{ href: "/blog/", label: "Blog" }}
+    />
   );
 }

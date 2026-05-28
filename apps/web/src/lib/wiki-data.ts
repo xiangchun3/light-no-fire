@@ -641,8 +641,8 @@ Gather resources from the world or refine raw ore at a forge.
 - [Light No Fire Map Size](/wiki/light-no-fire-map-size)`
   },
   {
-    slug: "boats",
-    title: "Boats",
+    slug: "boats-overview",
+    title: "Boats Overview",
     category: "Gameplay",
     excerpt: "Boats enable ocean exploration. Upgrade hulls, sails, and cargo capacity to venture further.",
     keywords: ["light no fire boats","ocean travel","ship building","boat upgrades","sailing"],
@@ -695,8 +695,8 @@ Gather resources from the world or refine raw ore at a forge.
 - [Dragons](/wiki/dragons)`
   },
   {
-    slug: "resources",
-    title: "Resources",
+    slug: "resources-overview",
+    title: "Resources Overview",
     category: "World",
     excerpt: "Resources are scattered across biomes. Iron, crystal, and rare herbs are essential for progression.",
     keywords: ["light no fire resources","iron","crystal","herbs","mining"],

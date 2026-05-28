@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
+import { ArticleLayout } from "@/components/article-layout";
 import { getNewsBySlug, getNewsSlugs } from "@/lib/news-data";
 
 export function generateStaticParams() {
@@ -23,20 +22,12 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
   if (!news) return notFound();
 
   return (
-    <>
-      <Navbar />
-      <main className="flex-1">
-        <article className="container mx-auto px-4 py-12 max-w-3xl">
-          <div className="text-xs font-medium text-primary mb-2">{news.source}</div>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">{news.title}</h1>
-          <div className="text-sm text-muted-foreground mb-8">{news.date}</div>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-6">{news.excerpt}</p>
-          <div className="prose prose-neutral dark:prose-invert max-w-none">
-            <p className="text-muted-foreground leading-relaxed">{news.content}</p>
-          </div>
-        </article>
-      </main>
-      <Footer />
-    </>
+    <ArticleLayout
+      title={news.title}
+      source={news.source}
+      date={news.date}
+      content={news.content}
+      backLink={{ href: "/news/", label: "News" }}
+    />
   );
 }
