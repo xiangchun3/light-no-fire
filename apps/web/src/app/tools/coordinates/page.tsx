@@ -7,6 +7,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
+import { buildFaqSchema, buildBreadcrumbSchema, siteConfig } from "@/lib/seo";
+
+const faqSchema = buildFaqSchema([
+  {
+    question: "How do I use the Coordinate Converter?",
+    answer: "Enter your in-game X and Y coordinates and click 'Convert to Lat/Lng' to get real-world map coordinates. You can also reverse the conversion by entering latitude and longitude.",
+  },
+  {
+    question: "Why do I need coordinate conversion?",
+    answer: "Light No Fire's interactive map uses real-world coordinate systems. Converting in-game coords to map coords helps you share precise locations with other players.",
+  },
+]);
+
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", item: siteConfig.domain },
+  { name: "Tools", item: `${siteConfig.domain}/tools/` },
+  { name: "Coordinate Converter", item: `${siteConfig.domain}/tools/coordinates/` },
+]);
 
 export default function CoordinateConverterPage() {
   const [x, setX] = useState("0");
@@ -28,6 +46,14 @@ export default function CoordinateConverterPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Navbar />
       <main className="flex-1">
         <section className="border-b border-border">

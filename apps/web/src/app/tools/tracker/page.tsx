@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ClipboardList, Check, Trash2 } from "lucide-react";
+import { buildFaqSchema, buildBreadcrumbSchema, siteConfig } from "@/lib/seo";
 
 interface TrackedItem {
   slug: string;
@@ -15,6 +16,27 @@ interface TrackedItem {
   target: number;
   current: number;
 }
+
+const faqSchema = buildFaqSchema([
+  {
+    question: "How does the Resource Tracker work?",
+    answer: "Select a resource, set your target amount, and click Add. Use the +/- buttons to update your current collection. Progress is saved automatically in your browser.",
+  },
+  {
+    question: "Is my tracking data saved?",
+    answer: "Yes, all tracking data is saved locally in your browser's localStorage. It persists between visits on the same device and browser.",
+  },
+  {
+    question: "Can I track multiple resources at once?",
+    answer: "Yes, you can add as many resources as you want to your tracking list and manage them all from one dashboard.",
+  },
+]);
+
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", item: siteConfig.domain },
+  { name: "Tools", item: `${siteConfig.domain}/tools/` },
+  { name: "Resource Tracker", item: `${siteConfig.domain}/tools/tracker/` },
+]);
 
 export default function ResourceTrackerPage() {
   const [tracked, setTracked] = useState<TrackedItem[]>([]);
@@ -49,6 +71,14 @@ export default function ResourceTrackerPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Navbar />
       <main className="flex-1">
         <section className="border-b border-border">

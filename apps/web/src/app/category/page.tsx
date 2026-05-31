@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { categories } from "@/lib/category-data";
-import { Layers } from "lucide-react";
+import { Layers, ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "Categories",
@@ -28,19 +27,18 @@ export default function CategoriesPage() {
           </div>
         </section>
 
-        <section className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="container mx-auto px-4 py-12 max-w-4xl">
+          <div className="divide-y divide-border border-b border-border">
             {categories.map((cat) => (
-              <Card key={cat.slug} className="hover:border-primary/50 transition-colors">
-                <CardHeader>
-                  <CardTitle className="text-lg">
-                    <Link href={`/category/${cat.slug}`} className="hover:text-primary transition-colors">
-                      {cat.title}
-                    </Link>
-                  </CardTitle>
-                  <CardDescription>{cat.description}</CardDescription>
-                </CardHeader>
-              </Card>
+              <article key={cat.slug} className="py-5 group flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                    <Link href={`/category/${cat.slug}`}>{cat.title}</Link>
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{cat.description}</p>
+                </div>
+                <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0 mt-1" />
+              </article>
             ))}
           </div>
         </section>

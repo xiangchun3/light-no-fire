@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
@@ -6,6 +7,24 @@ import { Flame, ArrowRight, Newspaper, BookOpen, Map, Wrench, ExternalLink } fro
 import { blogPosts } from "@/lib/blog-data";
 import { wikiArticles } from "@/lib/wiki-data";
 import { newsItems } from "@/lib/news-data";
+import { buildFaqSchema, buildBreadcrumbSchema, siteConfig } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: "Light No Fire Wiki & Map - Guides, Tools & Database (2026)",
+  description:
+    "The ultimate Light No Fire companion — wiki, interactive map, crafting calculators, resource database, creatures, items, and guides. Updated regularly.",
+  keywords: [
+    "Light No Fire",
+    "Light No Fire Wiki",
+    "Light No Fire Map",
+    "Light No Fire Guide",
+    "Light No Fire Tools",
+    "Light No Fire crafting",
+    "Light No Fire creatures",
+    "Light No Fire resources",
+  ],
+  alternates: { canonical: "/" },
+};
 
 const latestPosts = blogPosts.slice(0, 3);
 const latestNews = newsItems.slice(0, 5);
@@ -14,10 +33,41 @@ const popularWiki = wikiArticles
   .filter((a) => ["light-no-fire-gameplay", "light-no-fire-world", "light-no-fire-crafting", "dragons", "light-no-fire-release-date"].includes(a.slug))
   .map((a) => ({ title: a.title, slug: a.slug, excerpt: a.excerpt, category: a.category }));
 
+const homeFaqSchema = buildFaqSchema([
+  {
+    question: "What is Light No Fire?",
+    answer: "Light No Fire is an upcoming fantasy survival game from Hello Games, the studio behind No Man's Sky. It features a single planet-scale fantasy world with dragons, survival mechanics, and cooperative multiplayer.",
+  },
+  {
+    question: "When is Light No Fire releasing?",
+    answer: "Hello Games has not announced an official release date yet. Industry analysis suggests a 2026 or 2027 launch window based on hiring patterns and trailer maturity.",
+  },
+  {
+    question: "Is Light No Fire multiplayer?",
+    answer: "Yes, small group cooperative multiplayer has been confirmed by Hello Games.",
+  },
+  {
+    question: "What platforms will Light No Fire be on?",
+    answer: "PC is confirmed. PlayStation 5 and Xbox are expected based on Hello Games' history with No Man's Sky.",
+  },
+]);
+
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", item: siteConfig.domain },
+]);
+
 export default function HomePage() {
   return (
     <>
       <Navbar />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <main className="flex-1">
         {/* Hero */}
         <section className="relative overflow-hidden border-b border-border">

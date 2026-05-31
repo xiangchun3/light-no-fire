@@ -1,12 +1,21 @@
 import Link from "next/link";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { blogPosts } from "@/lib/blog-data";
 
-export const metadata = {
-  title: "Blog",
-  description: "Latest news, guides, and deep dives into Light No Fire.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog - Light No Fire News, Guides & Deep Dives",
+  description:
+    "Read the latest Light No Fire blog posts: gameplay analysis, feature breakdowns, community news, and pre-release coverage.",
+  keywords: [
+    "Light No Fire blog",
+    "Light No Fire news",
+    "Light No Fire updates",
+    "Light No Fire analysis",
+    "Light No Fire features",
+  ],
   alternates: { canonical: "/blog/" },
 };
 
@@ -24,21 +33,19 @@ export default function BlogPage() {
           </div>
         </section>
 
-        <section className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="container mx-auto px-4 py-12 max-w-4xl">
+          <div className="divide-y divide-border border-b border-border">
             {blogPosts.map((post) => (
-              <Card key={post.slug} className="hover:border-primary/50 transition-colors">
-                <CardHeader>
-                  <div className="text-xs font-medium text-primary mb-2">{post.category}</div>
-                  <CardTitle className="text-lg">
-                    <Link href={`/blog/${post.slug}`} className="hover:text-primary transition-colors">
-                      {post.title}
-                    </Link>
-                  </CardTitle>
-                  <CardDescription>{post.date}</CardDescription>
-                  <p className="text-sm text-muted-foreground mt-2">{post.excerpt}</p>
-                </CardHeader>
-              </Card>
+              <article key={post.slug} className="py-6 group">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-xs font-medium text-primary">{post.category}</span>
+                  <span className="text-xs text-muted-foreground">{post.date}</span>
+                </div>
+                <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                  <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                </h3>
+                <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{post.excerpt}</p>
+              </article>
             ))}
           </div>
         </section>

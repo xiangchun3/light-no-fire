@@ -1,12 +1,22 @@
 import Link from "next/link";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { newsItems } from "@/lib/news-data";
 
-export const metadata = {
-  title: "News",
-  description: "Latest news, rumors, and updates about Light No Fire.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Latest Light No Fire News - Updates, Rumors & Announcements",
+  description:
+    "Stay up to date with the latest Light No Fire news. Official announcements, community updates, leaks, and release date speculation in one place.",
+  keywords: [
+    "Light No Fire news",
+    "Light No Fire updates",
+    "Light No Fire release date",
+    "Light No Fire rumors",
+    "Light No Fire announcements",
+    "Hello Games news",
+  ],
   alternates: { canonical: "/news/" },
 };
 
@@ -24,25 +34,20 @@ export default function NewsPage() {
           </div>
         </section>
 
-        <section className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="container mx-auto px-4 py-12 max-w-4xl">
+          <div className="divide-y divide-border border-b border-border">
             {newsItems.map((news) => (
-              <Card key={news.slug} className="hover:border-primary/50 transition-colors">
-                <CardHeader>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-medium text-primary">{news.source}</span>
-                    <span className="text-xs text-muted-foreground">{news.date}</span>
-                  </div>
-                  <CardTitle className="text-lg">
-                    <Link href={`/news/${news.slug}/`} className="hover:text-primary transition-colors">
-                      {news.title}
-                    </Link>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">{news.excerpt}</p>
-                </CardContent>
-              </Card>
+              <article key={news.slug} className="py-5 group">
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3">
+                  <span className="text-xs font-medium text-primary shrink-0">{news.source}</span>
+                  <span className="text-xs text-muted-foreground hidden sm:block">·</span>
+                  <span className="text-xs text-muted-foreground">{news.date}</span>
+                </div>
+                <h3 className="text-lg font-semibold mt-1 group-hover:text-primary transition-colors">
+                  <Link href={`/news/${news.slug}/`}>{news.title}</Link>
+                </h3>
+                <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{news.excerpt}</p>
+              </article>
             ))}
           </div>
         </section>

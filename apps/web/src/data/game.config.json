@@ -1,0 +1,68 @@
+{
+  "game": {
+    "name": "Light No Fire",
+    "developer": "Hello Games",
+    "genre": "Fantasy Survival",
+    "currentVersion": "TBA",
+    "lastUpdated": "2026-05-29",
+    "releaseStatus": "Unreleased (Expected 2026-2027)",
+    "platforms": ["PC", "PS5", "Xbox"]
+  },
+  "site": {
+    "name": "Light No Fire Wiki & Map",
+    "domain": "https://lightnofirewiki.com",
+    "language": "en",
+    "favicon": "/favicon.ico"
+  },
+  "seo": {
+    "siteTitle": "Light No Fire Wiki & Map - Guides, Tools & Database",
+    "siteDescription": "The ultimate Light No Fire companion — wiki, interactive map, crafting calculators, resource database, and guides. Updated regularly.",
+    "primaryKeywords": [
+      "Light No Fire",
+      "Light No Fire Wiki",
+      "Light No Fire Map",
+      "Light No Fire Guide",
+      "Light No Fire Tools"
+    ],
+    "secondaryKeywords": [
+      "Light No Fire crafting",
+      "Light No Fire creatures",
+      "Light No Fire resources",
+      "Light No Fire items",
+      "Light No Fire biomes",
+      "Light No Fire dragons",
+      "Light No Fire multiplayer",
+      "Light No Fire release date"
+    ]
+  },
+  "routes": [
+    { "path": "/", "title": "Light No Fire Wiki & Map", "priority": 1.0, "changeFrequency": "daily" },
+    { "path": "/wiki/", "title": "Wiki Database", "priority": 0.9, "changeFrequency": "weekly" },
+    { "path": "/blog/", "title": "Blog", "priority": 0.8, "changeFrequency": "weekly" },
+    { "path": "/news/", "title": "News", "priority": 0.9, "changeFrequency": "daily" },
+    { "path": "/guides/", "title": "Guides", "priority": 0.85, "changeFrequency": "weekly" },
+    { "path": "/faq/", "title": "FAQ", "priority": 0.8, "changeFrequency": "weekly" },
+    { "path": "/map/", "title": "Interactive Map", "priority": 0.9, "changeFrequency": "weekly" },
+    { "path": "/tools/", "title": "Player Tools", "priority": 0.9, "changeFrequency": "weekly" },
+    { "path": "/tools/crafting/", "title": "Crafting Calculator", "priority": 0.85, "changeFrequency": "weekly" },
+    { "path": "/tools/coordinates/", "title": "Coordinate Converter", "priority": 0.8, "changeFrequency": "weekly" },
+    { "path": "/tools/tracker/", "title": "Resource Tracker", "priority": 0.8, "changeFrequency": "weekly" },
+    { "path": "/items/", "title": "Items Database", "priority": 0.85, "changeFrequency": "weekly" },
+    { "path": "/creatures/", "title": "Creatures Database", "priority": 0.85, "changeFrequency": "weekly" },
+    { "path": "/resources/", "title": "Resources Database", "priority": 0.85, "changeFrequency": "weekly" },
+    { "path": "/category/", "title": "Categories", "priority": 0.75, "changeFrequency": "weekly" },
+    { "path": "/search/", "title": "Search", "priority": 0.7, "changeFrequency": "weekly" },
+    { "path": "/about/", "title": "About", "priority": 0.6, "changeFrequency": "monthly" },
+    { "path": "/contact/", "title": "Contact", "priority": 0.5, "changeFrequency": "monthly" },
+    { "path": "/privacy-policy/", "title": "Privacy Policy", "priority": 0.4, "changeFrequency": "yearly" },
+    { "path": "/terms/", "title": "Terms of Service", "priority": 0.4, "changeFrequency": "yearly" },
+    { "path": "/cookies/", "title": "Cookie Policy", "priority": 0.4, "changeFrequency": "yearly" }
+  ],
+  "calculator": {
+    "type": "crafting",
+    "dataFile": "recipes.ts"
+  },
+  "social": {
+    "twitterHandle": "@LightNoFireWiki"
+  }
+}

@@ -15,30 +15,62 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://lightnofirewiki.com"),
   title: {
-    default: "Light No Fire Wiki & Map - Guides, Tools & Database",
+    default: "Light No Fire Wiki & Map - Guides, Tools & Database (2026)",
     template: "%s - Light No Fire Wiki",
   },
-    description:
-    "Light No Fire wiki, interactive map, and tools. Find items, resources, creatures, biomes, crafting guides, and more.",
+  description:
+    "The ultimate Light No Fire companion — wiki, interactive map, crafting calculators, resource database, and guides. Updated regularly.",
   keywords: [
     "Light No Fire",
     "Light No Fire Wiki",
     "Light No Fire Map",
     "Light No Fire Guide",
     "Light No Fire Tools",
+    "Light No Fire crafting",
+    "Light No Fire creatures",
+    "Light No Fire resources",
+    "Light No Fire items",
+    "Light No Fire biomes",
+    "Light No Fire dragons",
+    "Light No Fire multiplayer",
+    "Light No Fire release date",
+    "Hello Games",
+    "fantasy survival game",
   ],
   openGraph: {
-    title: "Light No Fire Wiki & Map",
-    description: "Light No Fire guides, map, and tools.",
+    title: "Light No Fire Wiki & Map - Guides, Tools & Database",
+    description: "The ultimate Light No Fire companion — wiki, interactive map, crafting calculators, resource database, and guides.",
     type: "website",
+    locale: "en_US",
+    siteName: "Light No Fire Wiki & Map",
+    images: [
+      {
+        url: "/og-default.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Light No Fire Wiki & Map",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Light No Fire Wiki & Map",
-    description: "Light No Fire guides, map, and tools.",
+    description: "The ultimate Light No Fire companion — wiki, interactive map, crafting calculators, resource database, and guides.",
+    images: ["/og-default.jpg"],
   },
   alternates: {
     canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

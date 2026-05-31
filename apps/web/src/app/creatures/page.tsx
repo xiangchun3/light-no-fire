@@ -1,14 +1,31 @@
 import Link from "next/link";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { creatures } from "@/lib/data";
 import { Bug } from "lucide-react";
 
-export const metadata = {
-  title: "Creatures Database",
-  description: "Bestiary of all creatures in Light No Fire including drops and locations.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Light No Fire Creatures Database - Bestiary, Drops & Locations",
+  description:
+    "Complete Light No Fire bestiary. All creatures, monsters, mounts, and bosses with biome locations, drops, health stats, and behavior info.",
+  keywords: [
+    "Light No Fire creatures",
+    "Light No Fire bestiary",
+    "Light No Fire monsters",
+    "Light No Fire dragons",
+    "Light No Fire mounts",
+    "Light No Fire bosses",
+    "Light No Fire drops",
+  ],
   alternates: { canonical: "/creatures/" },
+};
+
+const typeStyle = (type: string) => {
+  if (type === "Boss") return "text-amber-500";
+  if (type === "Aggressive") return "text-red-500";
+  return "text-green-500";
 };
 
 export default function CreaturesPage() {
@@ -28,27 +45,23 @@ export default function CreaturesPage() {
           </div>
         </section>
 
-        <section className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section className="container mx-auto px-4 py-12 max-w-5xl">
+          <div className="divide-y divide-border border-b border-border">
             {creatures.map((c) => (
-              <Card key={c.slug} className="hover:border-primary/50 transition-colors">
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="text-base">
-                      <Link href={`/creatures/${c.slug}`} className="hover:text-primary transition-colors">
-                        {c.name}
-                      </Link>
-                    </CardTitle>
-                    <span className={`text-xs font-medium ${c.type === "Boss" ? "text-amber-400" : c.type === "Aggressive" ? "text-red-400" : "text-green-400"}`}>
-                      {c.type}
-                    </span>
-                  </div>
-                  <CardDescription>{c.biome}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">{c.description}</p>
-                </CardContent>
-              </Card>
+              <article key={c.slug} className="py-5 group flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-6">
+                <div className="sm:w-40 shrink-0">
+                  <span className={`text-xs font-semibold uppercase tracking-wider ${typeStyle(c.type)}`}>
+                    {c.type}
+                  </span>
+                  <p className="text-xs text-muted-foreground mt-1">{c.biome}</p>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-base font-semibold group-hover:text-primary transition-colors">
+                    <Link href={`/creatures/${c.slug}`}>{c.name}</Link>
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{c.description}</p>
+                </div>
+              </article>
             ))}
           </div>
         </section>

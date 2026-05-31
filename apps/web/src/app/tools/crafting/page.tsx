@@ -8,6 +8,28 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Calculator } from "lucide-react";
+import { buildFaqSchema, buildBreadcrumbSchema, siteConfig } from "@/lib/seo";
+
+const faqSchema = buildFaqSchema([
+  {
+    question: "How does the Light No Fire Crafting Calculator work?",
+    answer: "Select any recipe from the dropdown menu, enter the quantity you want to craft, and the calculator instantly shows the total materials required.",
+  },
+  {
+    question: "Is the Crafting Calculator free?",
+    answer: "Yes, the calculator is completely free to use with no account required.",
+  },
+  {
+    question: "What recipes are included?",
+    answer: "The calculator includes all known crafting recipes from the Light No Fire database, covering weapons, armor, tools, consumables, and materials.",
+  },
+]);
+
+const breadcrumbSchema = buildBreadcrumbSchema([
+  { name: "Home", item: siteConfig.domain },
+  { name: "Tools", item: `${siteConfig.domain}/tools/` },
+  { name: "Crafting Calculator", item: `${siteConfig.domain}/tools/crafting/` },
+]);
 
 export default function CraftingCalculatorPage() {
   const [selectedRecipe, setSelectedRecipe] = useState(recipes[0]);
@@ -15,6 +37,14 @@ export default function CraftingCalculatorPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Navbar />
       <main className="flex-1">
         <section className="border-b border-border">

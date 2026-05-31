@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   getCategoryBySlug,
   getCategorySlugs,
@@ -31,6 +30,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
+const creatureTypeColor = (type: string) => {
+  if (type === "Boss") return "text-amber-500";
+  if (type === "Aggressive") return "text-red-500";
+  return "text-green-500";
+};
+
 export default async function CategoryDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const cat = getCategoryBySlug(slug);
@@ -52,30 +57,26 @@ export default async function CategoryDetailPage({ params }: { params: Promise<{
           </div>
         </section>
 
-        <section className="container mx-auto px-4 py-12 space-y-16">
+        <section className="container mx-auto px-4 py-12 max-w-4xl space-y-14">
           {wikiArticles.length > 0 && (
             <div>
-              <h2 className="text-xl font-semibold mb-6">Wiki Guides</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <h2 className="text-xl font-semibold mb-5 pb-2 border-b border-border">Wiki Guides</h2>
+              <div className="divide-y divide-border">
                 {wikiArticles.map((article) => (
-                  <Card key={article.slug} className="hover:border-primary/50 transition-colors">
-                    <CardHeader>
-                      <CardTitle className="text-base">
-                        <Link href={`/wiki/${article.slug}`} className="hover:text-primary transition-colors">
-                          {article.title}
-                        </Link>
-                      </CardTitle>
-                      <CardDescription>{article.excerpt}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <Link
-                        href={`/wiki/${article.slug}`}
-                        className="inline-flex items-center text-xs font-medium text-primary hover:underline"
-                      >
-                        Read more <ArrowRight className="ml-1 h-3 w-3" />
-                      </Link>
-                    </CardContent>
-                  </Card>
+                  <article key={article.slug} className="py-4 group flex items-start justify-between gap-4">
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base font-semibold group-hover:text-primary transition-colors">
+                        <Link href={`/wiki/${article.slug}`}>{article.title}</Link>
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{article.excerpt}</p>
+                    </div>
+                    <Link
+                      href={`/wiki/${article.slug}`}
+                      className="shrink-0 inline-flex items-center text-sm font-medium text-primary hover:underline mt-0.5"
+                    >
+                      Read <ArrowRight className="ml-1 h-3.5 w-3.5" />
+                    </Link>
+                  </article>
                 ))}
               </div>
             </div>
@@ -83,23 +84,19 @@ export default async function CategoryDetailPage({ params }: { params: Promise<{
 
           {blogPosts.length > 0 && (
             <div>
-              <h2 className="text-xl font-semibold mb-6">Blog Articles</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <h2 className="text-xl font-semibold mb-5 pb-2 border-b border-border">Blog Articles</h2>
+              <div className="divide-y divide-border">
                 {blogPosts.map((post) => (
-                  <Card key={post.slug} className="hover:border-primary/50 transition-colors">
-                    <CardHeader>
-                      <div className="text-xs font-medium text-primary mb-2">{post.category}</div>
-                      <CardTitle className="text-base">
-                        <Link href={`/blog/${post.slug}`} className="hover:text-primary transition-colors">
-                          {post.title}
-                        </Link>
-                      </CardTitle>
-                      <CardDescription>{post.date}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground">{post.excerpt}</p>
-                    </CardContent>
-                  </Card>
+                  <article key={post.slug} className="py-4 group">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-xs font-medium text-primary">{post.category}</span>
+                      <span className="text-xs text-muted-foreground">{post.date}</span>
+                    </div>
+                    <h3 className="text-base font-semibold group-hover:text-primary transition-colors">
+                      <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                    </h3>
+                    <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{post.excerpt}</p>
+                  </article>
                 ))}
               </div>
             </div>
@@ -107,25 +104,23 @@ export default async function CategoryDetailPage({ params }: { params: Promise<{
 
           {items.length > 0 && (
             <div>
-              <h2 className="text-xl font-semibold mb-6">Items</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <h2 className="text-xl font-semibold mb-5 pb-2 border-b border-border">Items</h2>
+              <div className="divide-y divide-border">
                 {items.map((item) => (
-                  <Card key={item.slug} className="hover:border-primary/50 transition-colors">
-                    <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-base">
-                          <Link href={`/items/${item.slug}`} className="hover:text-primary transition-colors">
-                            {item.name}
-                          </Link>
-                        </CardTitle>
-                        <span className={`text-xs font-medium ${getRarityColor(item.rarity)}`}>{item.rarity}</span>
-                      </div>
-                      <CardDescription>{item.type}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
-                    </CardContent>
-                  </Card>
+                  <article key={item.slug} className="py-4 group flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6">
+                    <div className="sm:w-32 shrink-0">
+                      <span className={`text-xs font-semibold uppercase tracking-wider ${getRarityColor(item.rarity)}`}>
+                        {item.rarity}
+                      </span>
+                      <p className="text-xs text-muted-foreground mt-1">{item.type}</p>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base font-semibold group-hover:text-primary transition-colors">
+                        <Link href={`/items/${item.slug}`}>{item.name}</Link>
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{item.description}</p>
+                    </div>
+                  </article>
                 ))}
               </div>
             </div>
@@ -133,35 +128,23 @@ export default async function CategoryDetailPage({ params }: { params: Promise<{
 
           {creatures.length > 0 && (
             <div>
-              <h2 className="text-xl font-semibold mb-6">Creatures</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <h2 className="text-xl font-semibold mb-5 pb-2 border-b border-border">Creatures</h2>
+              <div className="divide-y divide-border">
                 {creatures.map((c) => (
-                  <Card key={c.slug} className="hover:border-primary/50 transition-colors">
-                    <CardHeader>
-                      <div className="flex items-center justify-between">
-                        <CardTitle className="text-base">
-                          <Link href={`/creatures/${c.slug}`} className="hover:text-primary transition-colors">
-                            {c.name}
-                          </Link>
-                        </CardTitle>
-                        <span
-                          className={`text-xs font-medium ${
-                            c.type === "Boss"
-                              ? "text-amber-400"
-                              : c.type === "Aggressive"
-                                ? "text-red-400"
-                                : "text-green-400"
-                          }`}
-                        >
-                          {c.type}
-                        </span>
-                      </div>
-                      <CardDescription>{c.biome}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground">{c.description}</p>
-                    </CardContent>
-                  </Card>
+                  <article key={c.slug} className="py-4 group flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6">
+                    <div className="sm:w-32 shrink-0">
+                      <span className={`text-xs font-semibold uppercase tracking-wider ${creatureTypeColor(c.type)}`}>
+                        {c.type}
+                      </span>
+                      <p className="text-xs text-muted-foreground mt-1">{c.biome}</p>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base font-semibold group-hover:text-primary transition-colors">
+                        <Link href={`/creatures/${c.slug}`}>{c.name}</Link>
+                      </h3>
+                      <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{c.description}</p>
+                    </div>
+                  </article>
                 ))}
               </div>
             </div>

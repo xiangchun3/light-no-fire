@@ -1,12 +1,22 @@
 import Link from "next/link";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { faqPages } from "@/lib/faq-data";
 
-export const metadata = {
-  title: "FAQ",
-  description: "Frequently asked questions about Light No Fire including release date, multiplayer, dragons, and more.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Light No Fire FAQ - Release Date, Multiplayer, Dragons & More",
+  description:
+    "Find answers to the most common Light No Fire questions: release date, multiplayer, platforms, dragons, gameplay mechanics, and more.",
+  keywords: [
+    "Light No Fire FAQ",
+    "Light No Fire questions",
+    "Light No Fire release date",
+    "Light No Fire multiplayer",
+    "Light No Fire platforms",
+    "Light No Fire dragons",
+  ],
   alternates: { canonical: "/faq/" },
 };
 
@@ -24,20 +34,16 @@ export default function FAQPage() {
           </div>
         </section>
 
-        <section className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <section className="container mx-auto px-4 py-12 max-w-4xl">
+          <div className="divide-y divide-border border-b border-border">
             {faqPages.map((page) => (
-              <Card key={page.slug} className="hover:border-primary/50 transition-colors">
-                <CardHeader>
-                  <div className="text-xs font-medium text-primary mb-2">FAQ</div>
-                  <CardTitle className="text-lg">
-                    <Link href={`/faq/${page.slug}`} className="hover:text-primary transition-colors">
-                      {page.title}
-                    </Link>
-                  </CardTitle>
-                  <CardDescription>{page.question}</CardDescription>
-                </CardHeader>
-              </Card>
+              <article key={page.slug} className="py-5 group">
+                <span className="text-xs font-medium text-primary">FAQ</span>
+                <h3 className="text-lg font-semibold mt-1 group-hover:text-primary transition-colors">
+                  <Link href={`/faq/${page.slug}`}>{page.title}</Link>
+                </h3>
+                <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{page.question}</p>
+              </article>
             ))}
           </div>
         </section>

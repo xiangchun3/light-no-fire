@@ -1,13 +1,24 @@
 import Link from "next/link";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { gameItems, getRarityColor } from "@/lib/data";
 import { Sword } from "lucide-react";
 
-export const metadata = {
-  title: "Items Database",
-  description: "Browse all items in Light No Fire including weapons, materials, and consumables.",
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Light No Fire Items Database - Weapons, Armor, Materials & Tools",
+  description:
+    "Browse the complete Light No Fire items database. Weapons, armor, tools, consumables, and materials with stats, rarity, and crafting info.",
+  keywords: [
+    "Light No Fire items",
+    "Light No Fire weapons",
+    "Light No Fire armor",
+    "Light No Fire materials",
+    "Light No Fire tools",
+    "Light No Fire consumables",
+    "Light No Fire database",
+  ],
   alternates: { canonical: "/items/" },
 };
 
@@ -28,27 +39,23 @@ export default function ItemsPage() {
           </div>
         </section>
 
-        <section className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <section className="container mx-auto px-4 py-12 max-w-5xl">
+          <div className="divide-y divide-border border-b border-border">
             {gameItems.map((item) => (
-              <Card key={item.slug} className="hover:border-primary/50 transition-colors">
-                <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="text-base">
-                      <Link href={`/items/${item.slug}`} className="hover:text-primary transition-colors">
-                        {item.name}
-                      </Link>
-                    </CardTitle>
-                    <span className={`text-xs font-medium ${getRarityColor(item.rarity)}`}>
-                      {item.rarity}
-                    </span>
-                  </div>
-                  <CardDescription>{item.type}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
-                </CardContent>
-              </Card>
+              <article key={item.slug} className="py-5 group flex flex-col sm:flex-row sm:items-start gap-3 sm:gap-6">
+                <div className="sm:w-40 shrink-0">
+                  <span className={`text-xs font-semibold uppercase tracking-wider ${getRarityColor(item.rarity)}`}>
+                    {item.rarity}
+                  </span>
+                  <p className="text-xs text-muted-foreground mt-1">{item.type}</p>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-base font-semibold group-hover:text-primary transition-colors">
+                    <Link href={`/items/${item.slug}`}>{item.name}</Link>
+                  </h3>
+                  <p className="text-sm text-muted-foreground mt-1 leading-relaxed">{item.description}</p>
+                </div>
+              </article>
             ))}
           </div>
         </section>

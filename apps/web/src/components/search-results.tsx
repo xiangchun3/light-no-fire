@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { searchAll } from "@/lib/data";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react";
@@ -40,7 +39,7 @@ export function SearchResults() {
       </div>
 
       {results && (
-        <div className="space-y-8">
+        <div className="space-y-10">
           {results.items.length === 0 && results.creatures.length === 0 && results.resources.length === 0 && (
             <p className="text-muted-foreground text-center">No results found for "{query}".</p>
           )}
@@ -48,16 +47,14 @@ export function SearchResults() {
           {results.items.length > 0 && (
             <div>
               <h2 className="text-lg font-semibold mb-4">Items ({results.items.length})</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="divide-y divide-border border-b border-border">
                 {results.items.map((item) => (
-                  <Card key={item.slug}>
-                    <CardHeader>
-                      <CardTitle className="text-base">
-                        <Link href={`/items/${item.slug}`} className="hover:text-primary">{item.name}</Link>
-                      </CardTitle>
-                      <CardDescription>{item.type}</CardDescription>
-                    </CardHeader>
-                  </Card>
+                  <article key={item.slug} className="py-3 group">
+                    <h3 className="text-base font-medium group-hover:text-primary transition-colors">
+                      <Link href={`/items/${item.slug}`}>{item.name}</Link>
+                    </h3>
+                    <p className="text-xs text-muted-foreground mt-0.5">{item.type}</p>
+                  </article>
                 ))}
               </div>
             </div>
@@ -66,16 +63,14 @@ export function SearchResults() {
           {results.creatures.length > 0 && (
             <div>
               <h2 className="text-lg font-semibold mb-4">Creatures ({results.creatures.length})</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="divide-y divide-border border-b border-border">
                 {results.creatures.map((c) => (
-                  <Card key={c.slug}>
-                    <CardHeader>
-                      <CardTitle className="text-base">
-                        <Link href={`/creatures/${c.slug}`} className="hover:text-primary">{c.name}</Link>
-                      </CardTitle>
-                      <CardDescription>{c.biome}</CardDescription>
-                    </CardHeader>
-                  </Card>
+                  <article key={c.slug} className="py-3 group">
+                    <h3 className="text-base font-medium group-hover:text-primary transition-colors">
+                      <Link href={`/creatures/${c.slug}`}>{c.name}</Link>
+                    </h3>
+                    <p className="text-xs text-muted-foreground mt-0.5">{c.biome}</p>
+                  </article>
                 ))}
               </div>
             </div>
@@ -84,16 +79,14 @@ export function SearchResults() {
           {results.resources.length > 0 && (
             <div>
               <h2 className="text-lg font-semibold mb-4">Resources ({results.resources.length})</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="divide-y divide-border border-b border-border">
                 {results.resources.map((r) => (
-                  <Card key={r.slug}>
-                    <CardHeader>
-                      <CardTitle className="text-base">
-                        <Link href={`/resources/${r.slug}`} className="hover:text-primary">{r.name}</Link>
-                      </CardTitle>
-                      <CardDescription>{r.biome}</CardDescription>
-                    </CardHeader>
-                  </Card>
+                  <article key={r.slug} className="py-3 group">
+                    <h3 className="text-base font-medium group-hover:text-primary transition-colors">
+                      <Link href={`/resources/${r.slug}`}>{r.name}</Link>
+                    </h3>
+                    <p className="text-xs text-muted-foreground mt-0.5">{r.biome}</p>
+                  </article>
                 ))}
               </div>
             </div>
